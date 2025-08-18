@@ -27,14 +27,14 @@
         /* Increased height for chart container to accommodate more labels */
         .chart-container {
             position: relative;
-            width: 100%;
-            max-width: 800px; /* Still constrain max width */
+            // width: 100%;
+            max-// width: 800px; /* Still constrain max width */
             margin-left: auto;
             margin-right: auto;
             height: 900px; /* Increased height for 60 labels */
             max-height: 90vh; /* Max height for larger screens */
         }
-        @media (min-width: 768px) {
+        @media (min-// width: 768px) {
             .chart-container {
                 height: 1200px; /* Even taller on desktop for better spacing */
                 max-height: 90vh;
@@ -53,7 +53,7 @@
             gap: 1rem; /* Space between images */
             padding-bottom: 1rem; /* Space for scrollbar */
             -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-            scrollbar-width: thin; /* Firefox */
+            scrollbar-// width: thin; /* Firefox */
             scrollbar-color: #34658F #F1F1F1; /* Firefox */
         }
         .image-album::-webkit-scrollbar {
@@ -69,7 +69,7 @@
         }
         .image-album img {
             flex-shrink: 0; /* Prevent images from shrinking */
-            width: 250px; /* Fixed width for each image in album */
+            // width: 250px; /* Fixed width for each image in album */
             height: 180px; /* Fixed height */
             object-fit: cover;
             border-radius: 0.5rem;
@@ -80,8 +80,8 @@
         .image-viewer-modal-content {
             background-color: #1a1a1a; /* Dark background for image viewer */
             position: relative;
-            width: 90%;
-            max-width: 900px;
+            // width: 90%;
+            max-// width: 900px;
             max-height: 90vh;
             display: flex;
             flex-direction: column;
@@ -92,7 +92,7 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.5);
         }
         .image-viewer-modal-content img {
-            max-width: 100%;
+            max-// width: 100%;
             max-height: 75vh; /* Adjust height to leave space for controls */
             object-fit: contain;
             border-radius: 0.5rem;
@@ -100,7 +100,7 @@
         .image-viewer-controls {
             display: flex;
             justify-content: space-between;
-            width: 100%;
+            // width: 100%;
             margin-top: 1rem;
         }
         .image-viewer-controls button {
@@ -418,7 +418,7 @@
                 name: "عروسک ماتروشکا",
                 englishName: "Matryoshka Doll",
                 country: "روسیه",
-                secondCountry: "چین", // New field
+                // secondCountry: "چین", // New field
                 minPriceUSD: 16, // New field
                 maxPriceUSD: 219, // New field
                 origin: "سرگیف پوساد",
@@ -438,17 +438,17 @@
                     "Souvenir's%20Images/matryoshka-2.jpg",
                     "Souvenir's%20Images/matryoshka-3.jpg"
                 ],
-                annualProductionUnits: 1200000,
-                annualSalesRevenueUSD: "یافت نشده",
-                annualProductionUnitsSecondCountry: 15000000, // New field
-                annualSalesRevenueUSDSecondCountry: 45000000 // New field
+                annualProductionUnits: "300k–1.2M (800k)",
+                annualSalesRevenueUSD: "$3M–$18M ($9.5M)",
+                // annualProductionUnits// secondCountry: 15000000, // New field
+                // annualSalesRevenueUSD// secondCountry: 45000000 // New field
             },
             {
                 id: 2,
                 name: "فرش ایرانی",
                 englishName: "Persian Carpet",
                 country: "ایران",
-                secondCountry: "ایالات متحده و چین", // New field
+                // secondCountry: "ایالات متحده و چین", // New field
                 minPriceUSD: 1180, // New field
                 maxPriceUSD: 70000, // New field
                 origin: "کاشان، اصفهان، تبریز",
@@ -473,17 +473,17 @@
                     "Souvenir's%20Images/carpet-2.jpg",
                     "Souvenir's%20Images/carpet-3.PNG"
                 ],
-                annualProductionUnits: " (3.9 میلیون متر مربع دستباف) حدود 100 میلیون متر مربع",
-                annualSalesRevenueUSD: "از 370 میلیون دلار",
-                annualProductionUnitsSecondCountry: "چین با حدود 60 میلیون متر مربع (ماشینی)", // New field
-                annualSalesRevenueUSDSecondCountry: "چین با 10 میلیارد دلار (ماشینی)" // New field
+                annualProductionUnits: "200k–1.2M (700k rugs)",
+                annualSalesRevenueUSD: "$30M–$500M ($150M)",
+                // annualProductionUnits// secondCountry: "چین با حدود 60 میلیون متر مربع (ماشینی)", // New field
+                // annualSalesRevenueUSD// secondCountry: "چین با 10 میلیارد دلار (ماشینی)" // New field
             },
             {
                 id: 3,
                 name: "ماسک ونیزی",
                 englishName: "Venetian Mask",
                 country: "ایتالیا",
-                secondCountry: "چین", // New field
+                // secondCountry: "چین", // New field
                 minPriceUSD: 20, // New field
                 maxPriceUSD: 200, // New field
                 origin: "ونیز",
@@ -503,17 +503,17 @@
                     "Souvenir's%20Images/Venice-2.jpg",
                     "Souvenir's%20Images/Venice-3.jpg"
                 ],
-                annualProductionUnits: 80000,
-                annualSalesRevenueUSD: 4800000,
-                annualProductionUnitsSecondCountry: 10000, // New field
-                annualSalesRevenueUSDSecondCountry: 600000 // New field
+                annualProductionUnits: "",
+                annualSalesRevenueUSD: "",
+                // annualProductionUnits// secondCountry: 10000, // New field
+                // annualSalesRevenueUSD// secondCountry: 600000 // New field
             },
             {
                 id: 4,
                 name: "کیمونو",
                 englishName: "Kimono",
                 country: "ژاپن",
-                secondCountry: "چین", // New field
+                // secondCountry: "چین", // New field
                 minPriceUSD: 100, // New field
                 maxPriceUSD: 5000, // New field
                 origin: "کیوتو",
@@ -538,17 +538,17 @@
                     "Souvenir's%20Images/Kimono-2.jpg",
                     "Souvenir's%20Images/Kimono-1.jpg"
                 ],
-                annualProductionUnits: 20000,
-                annualSalesRevenueUSD: 3000000,
-                annualProductionUnitsSecondCountry: 5000, // New field
-                annualSalesRevenueUSDSecondCountry: 750000 // New field
+                annualProductionUnits: "60k–300k",
+                annualSalesRevenueUSD: "$6M–$120M ($35M)",
+                // annualProductionUnits// secondCountry: 5000, // New field
+                // annualSalesRevenueUSD// secondCountry: 750000 // New field
             },
             {
                 id: 5,
                 name: "صندل اسپانیایی (اسپایدریل)",
                 englishName: "Espadrilles",
                 country: "اسپانیا",
-                secondCountry: "-", // New field
+                // secondCountry: "-", // New field
                 minPriceUSD: 00, // New field
                 maxPriceUSD: "00", // New field
                 origin: "منطقه پیرنه",
@@ -568,47 +568,17 @@
                     "Souvenir's%20Images/Greek-2.PNG",
                     "Souvenir's%20Images/Greek-3.jpg"
                 ],
-                annualProductionUnits: 000,
-                annualSalesRevenueUSD: 000,
-                annualProductionUnitsSecondCountry: 000, // New field
-                annualSalesRevenueUSDSecondCountry: 000 // New field
-            },
-             {
-                id: 6,
-                name: "مجسمه ابوالهول",
-                englishName: "Sphinx Figurine",
-                country: "مصر",
-                secondCountry: "چین", // New field
-                minPriceUSD: 10, // New field
-                maxPriceUSD: 500, // New field
-                origin: "جیزه، قاهره",
-                story: "ابوالهول بزرگ جیزه، موجودی افسانه‌ای با بدن شیر و سر انسان، یکی از نمادین‌ترین بناهای تاریخی جهان است. این مجسمه‌های کوچک یادآور عظمت و رمز و راز مصر باستان هستند.",
-                description: "ماکت‌های کوچک از ابوالهول که از مواد مختلفی مانند سنگ، فلز یا رزین ساخته می‌شوند و به عنوان یکی از اصلی‌ترین نمادهای مصر خریداری می‌شوند.",
-                avgPriceUSD: 50,
-                localPrice: "2410 EGP",
-                category: ["دکوری", "تاریخی", "یادگاری"],
-                audience: ["جوانان", "علاقه‌مندان به تاریخ", "کودکان", "گردشگران"],
-                materials: "سنگ بازالت، رزین، فلز",
-                usage: "دکور میز، یادگاری سفر، هدیه",
-                culturalValue: 6,
-                economicValue: 5,
-                // Updated to imageUrls array
-                imageUrls: [
-                    "Souvenir's%20Images/Sphinx-1.jpg",
-                    "Souvenir's%20Images/Sphinx-2.jpg",
-                    "Souvenir's%20Images/Sphinx-3.jpg"
-                ],
-                annualProductionUnits: 200000,
-                annualSalesRevenueUSD: 3000000,
-                annualProductionUnitsSecondCountry: 15000, // New field
-                annualSalesRevenueUSDSecondCountry: 225000 // New field
+                annualProductionUnits: "2.0M–10M (5M)",
+                annualSalesRevenueUSD: "$50M–$300M ($110M)",
+                // annualProductionUnits// secondCountry: 000, // New field
+                // annualSalesRevenueUSD// secondCountry: 000 // New field
             },
             {
-                id: 7,
-                name: "کلاه کابوی",
-                englishName: "Cowboy Hat",
-                country: "آمریکا",
-                secondCountry: "مکزیک", // New field
+                id: 6,
+                name: "چاقوی ارتش سوئیس",
+                englishName: "Swiss Army Knife",
+                country: "سوئیس",
+                // secondCountry: "مکزیک", // New field
                 minPriceUSD: 20, // New field
                 maxPriceUSD: 150, // New field
                 origin: "تگزاس",
@@ -628,17 +598,167 @@
                     "Souvenir's%20Images/Cowboy-2.jpg",
                     "Souvenir's%20Images/Cowboy-1.PNG"
                 ],
-                annualProductionUnits: 75000,
-                annualSalesRevenueUSD: 6000000,
-                annualProductionUnitsSecondCountry: 20000, // New field
-                annualSalesRevenueUSDSecondCountry: 1600000 // New field
+                annualProductionUnits: "500k–3M",
+                annualSalesRevenueUSD: "$40M–$300M ($120M)",
+                // annualProductionUnits// secondCountry: 20000, // New field
+                // annualSalesRevenueUSD// secondCountry: 1600000 // New field
+            },
+            {
+                id: 7,
+                name: "اتوبوس دو طبقه لندن",
+                englishName: "London Double-Decker bus",
+                country: "ابریتانیا",
+                // secondCountry: "مکزیک", // New field
+                minPriceUSD: 20, // New field
+                maxPriceUSD: 150, // New field
+                origin: "تگزاس",
+                story: "این کلاه که در قرن ۱۹ برای محافظت گاوچرانان از آفتاب و باران طراحی شد، به نمادی از غرب وحشی، استقلال و روح ماجراجوی آمریکایی تبدیل شده است.",
+                description: "کلاهی با لبه پهن که معمولاً از نمد یا چرم ساخته می‌شود. این کلاه فراتر از یک پوشش سر، بخشی از هویت فرهنگی مناطق غربی و جنوبی آمریکاست.",
+                avgPriceUSD: 50,
+                localPrice: "50 USD",
+                category: ["پوشاک", "مد", "فرهنگی"],
+                audience: ["مردان", "ورزشکاران", "علاقه‌مندان به فرهنگ", "گردشگران"],
+                materials: "نمد، چرم",
+                usage: "پوشش روزمره، مد و فشن, یادگاری",
+                culturalValue: 7,
+                economicValue: 6,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/Cowboy-3.PNG",
+                    "Souvenir's%20Images/Cowboy-2.jpg",
+                    "Souvenir's%20Images/Cowboy-1.PNG"
+                ],
+                annualProductionUnits: "500k–3M",
+                annualSalesRevenueUSD: "$40M–$300M ($120M)",
+                // annualProductionUnits// secondCountry: 20000, // New field
+                // annualSalesRevenueUSD// secondCountry: 1600000 // New field
             },
             {
                 id: 8,
+                name: "مینیاتور برج ایفل",
+                englishName: "Eiffel Tower miniature",
+                country: "فرانسه",
+                // secondCountry: "مکزیک", // New field
+                minPriceUSD: 20, // New field
+                maxPriceUSD: 150, // New field
+                origin: "تگزاس",
+                story: "این کلاه که در قرن ۱۹ برای محافظت گاوچرانان از آفتاب و باران طراحی شد، به نمادی از غرب وحشی، استقلال و روح ماجراجوی آمریکایی تبدیل شده است.",
+                description: "کلاهی با لبه پهن که معمولاً از نمد یا چرم ساخته می‌شود. این کلاه فراتر از یک پوشش سر، بخشی از هویت فرهنگی مناطق غربی و جنوبی آمریکاست.",
+                avgPriceUSD: 50,
+                localPrice: "50 USD",
+                category: ["پوشاک", "مد", "فرهنگی"],
+                audience: ["مردان", "ورزشکاران", "علاقه‌مندان به فرهنگ", "گردشگران"],
+                materials: "نمد، چرم",
+                usage: "پوشش روزمره، مد و فشن, یادگاری",
+                culturalValue: 7,
+                economicValue: 6,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/Cowboy-3.PNG",
+                    "Souvenir's%20Images/Cowboy-2.jpg",
+                    "Souvenir's%20Images/Cowboy-1.PNG"
+                ],
+                annualProductionUnits: "500k–3M",
+                annualSalesRevenueUSD: "$40M–$300M ($120M)",
+                // annualProductionUnits// secondCountry: 20000, // New field
+                // annualSalesRevenueUSD// secondCountry: 1600000 // New field
+            },
+            {
+                id: 9,
+                name: "ساعت فاخته جنگل سیاه",
+                englishName: "Black Forest Cuckoo Clock",
+                country: "آلمان",
+                // secondCountry: "مکزیک", // New field
+                minPriceUSD: 20, // New field
+                maxPriceUSD: 150, // New field
+                origin: "تگزاس",
+                story: "این کلاه که در قرن ۱۹ برای محافظت گاوچرانان از آفتاب و باران طراحی شد، به نمادی از غرب وحشی، استقلال و روح ماجراجوی آمریکایی تبدیل شده است.",
+                description: "کلاهی با لبه پهن که معمولاً از نمد یا چرم ساخته می‌شود. این کلاه فراتر از یک پوشش سر، بخشی از هویت فرهنگی مناطق غربی و جنوبی آمریکاست.",
+                avgPriceUSD: 50,
+                localPrice: "50 USD",
+                category: ["پوشاک", "مد", "فرهنگی"],
+                audience: ["مردان", "ورزشکاران", "علاقه‌مندان به فرهنگ", "گردشگران"],
+                materials: "نمد، چرم",
+                usage: "پوشش روزمره، مد و فشن, یادگاری",
+                culturalValue: 7,
+                economicValue: 6,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/Cowboy-3.PNG",
+                    "Souvenir's%20Images/Cowboy-2.jpg",
+                    "Souvenir's%20Images/Cowboy-1.PNG"
+                ],
+                annualProductionUnits: "500k–3M",
+                annualSalesRevenueUSD: "$40M–$300M ($120M)",
+                // annualProductionUnits// secondCountry: 20000, // New field
+                // annualSalesRevenueUSD// secondCountry: 1600000 // New field
+            },
+             {
+                id: 10,
+                name: "مجسمه ابوالهول",
+                englishName: "Sphinx Figurine",
+                country: "مصر",
+                // secondCountry: "چین", // New field
+                minPriceUSD: 10, // New field
+                maxPriceUSD: 500, // New field
+                origin: "جیزه، قاهره",
+                story: "ابوالهول بزرگ جیزه، موجودی افسانه‌ای با بدن شیر و سر انسان، یکی از نمادین‌ترین بناهای تاریخی جهان است. این مجسمه‌های کوچک یادآور عظمت و رمز و راز مصر باستان هستند.",
+                description: "ماکت‌های کوچک از ابوالهول که از مواد مختلفی مانند سنگ، فلز یا رزین ساخته می‌شوند و به عنوان یکی از اصلی‌ترین نمادهای مصر خریداری می‌شوند.",
+                avgPriceUSD: 50,
+                localPrice: "2410 EGP",
+                category: ["دکوری", "تاریخی", "یادگاری"],
+                audience: ["جوانان", "علاقه‌مندان به تاریخ", "کودکان", "گردشگران"],
+                materials: "سنگ بازالت، رزین، فلز",
+                usage: "دکور میز، یادگاری سفر، هدیه",
+                culturalValue: 6,
+                economicValue: 5,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/Sphinx-1.jpg",
+                    "Souvenir's%20Images/Sphinx-2.jpg",
+                    "Souvenir's%20Images/Sphinx-3.jpg"
+                ],
+                annualProductionUnits: "200k–1.5M",
+                annualSalesRevenueUSD: "$1M–$12M ($4.5M)",
+                // annualProductionUnits// secondCountry: 15000, // New field
+                // annualSalesRevenueUSD// secondCountry: 225000 // New field
+            },
+            {
+                id: 11,
+                name: "کلاه کابوی",
+                englishName: "Cowboy Hat",
+                country: "آمریکا",
+                // secondCountry: "مکزیک", // New field
+                minPriceUSD: 20, // New field
+                maxPriceUSD: 150, // New field
+                origin: "تگزاس",
+                story: "این کلاه که در قرن ۱۹ برای محافظت گاوچرانان از آفتاب و باران طراحی شد، به نمادی از غرب وحشی، استقلال و روح ماجراجوی آمریکایی تبدیل شده است.",
+                description: "کلاهی با لبه پهن که معمولاً از نمد یا چرم ساخته می‌شود. این کلاه فراتر از یک پوشش سر، بخشی از هویت فرهنگی مناطق غربی و جنوبی آمریکاست.",
+                avgPriceUSD: 50,
+                localPrice: "50 USD",
+                category: ["پوشاک", "مد", "فرهنگی"],
+                audience: ["مردان", "ورزشکاران", "علاقه‌مندان به فرهنگ", "گردشگران"],
+                materials: "نمد، چرم",
+                usage: "پوشش روزمره، مد و فشن, یادگاری",
+                culturalValue: 7,
+                economicValue: 6,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/Cowboy-3.PNG",
+                    "Souvenir's%20Images/Cowboy-2.jpg",
+                    "Souvenir's%20Images/Cowboy-1.PNG"
+                ],
+                annualProductionUnits: "500k–3M",
+                annualSalesRevenueUSD: "$40M–$300M ($120M)",
+                // annualProductionUnits// secondCountry: 20000, // New field
+                // annualSalesRevenueUSD// secondCountry: 1600000 // New field
+            },
+            {
+                id: 12,
                 name: "اسب دالا (اسب دالکارلیایی)",
                 englishName: "Dala Horse",
                 country: "سوئد",
-                secondCountry: "-", // New field
+                // secondCountry: "-", // New field
                 minPriceUSD: 25, // New field
                 maxPriceUSD: "100", // New field
                 origin: "روستای برگکارلوس، سوئد",
@@ -658,17 +778,17 @@
                     "Souvenir's%20Images/Greek-2.PNG",
                     "Souvenir's%20Images/Greek-3.jpg"
                 ],
-                annualProductionUnits: "حدود ۱۰۰٬۰۰۰ عدد (تولید سالانه توسط بزرگ‌ترین تولیدکننده)",
-                annualSalesRevenueUSD: "گردش مالی حدود ۱۷ میلیون کرون سوئد (~۱٫۶۵ میلیون یورو)",
-                annualProductionUnitsSecondCountry: 000, // New field
-                annualSalesRevenueUSDSecondCountry: 000 // New field
+                annualProductionUnits: "60k–300k",
+                annualSalesRevenueUSD: "$0.5M–$6M ($2.0M)",
+                // annualProductionUnits// secondCountry: 000, // New field
+                // annualSalesRevenueUSD// secondCountry: 000 // New field
             },
             {
-                id: 9,
+                id: 13,
                 name: "بومرنگ",
                 englishName: "Boomerang",
                 country: "استرالیا",
-                secondCountry: "-", // New field
+                // secondCountry: "-", // New field
                 minPriceUSD: 5, // New field
                 maxPriceUSD: 300, // New field
                 origin: "سرزمین آرنهم",
@@ -688,17 +808,17 @@
                     "Souvenir's%20Images/boomrang-2.PNG",
                     "Souvenir's%20Images/boomrang-3.jpg"
                 ],
-                annualProductionUnits: "تا 10000",
-                annualSalesRevenueUSD: "تا چند صد هزار دلار",
-                annualProductionUnitsSecondCountry: 000, // New field
-                annualSalesRevenueUSDSecondCountry: 000 // New field
+                annualProductionUnits: "60k–500k",
+                annualSalesRevenueUSD: "$0.6M–$12M ($3.2M)",
+                // annualProductionUnits// secondCountry: 000, // New field
+                // annualSalesRevenueUSD// secondCountry: 000 // New field
             },
              {
-                id: 10,
+                id: 14,
                 name: "کفش چوبی هلندی",
                 englishName: "Dutch Clogs (Klompen)",
                 country: "هلند",
-                secondCountry: "چین و سوئد", // New field
+                // secondCountry: "چین و سوئد", // New field
                 minPriceUSD: 50, // New field
                 maxPriceUSD: 150, // New field
                 origin: "Zaanse Schans",
@@ -718,17 +838,17 @@
                     "Souvenir's%20Images/Klompen-2.jpg",
                     "Souvenir's%20Images/Klompen-3.jpg"
                 ],
-                annualProductionUnits: 3000000,
-                annualSalesRevenueUSD: "از 150 تا 300 میلیون دلار",
-                annualProductionUnitsSecondCountry: "داده در دسترس نیست", // New field
-                annualSalesRevenueUSDSecondCountry: "داده در دسترس نیست" // New field
+                annualProductionUnits: "300k–1.5M",
+                annualSalesRevenueUSD: "$2M–$20M ($7.5M)",
+                // annualProductionUnits// secondCountry: "داده در دسترس نیست", // New field
+                // annualSalesRevenueUSD// secondCountry: "داده در دسترس نیست" // New field
             },
             {
-                id: 11,
+                id: 15,
                 name: "فانوس مراکشی",
                 englishName: "Moroccan Lantern",
                 country: "مراکش",
-                secondCountry: "چین", // New field
+                // secondCountry: "چین", // New field
                 minPriceUSD: 30, // New field
                 maxPriceUSD: 200, // New field
                 origin: "فاس، مراکش",
@@ -748,17 +868,17 @@
                     "Souvenir's%20Images/Lantern-2.PNG",
                     "Souvenir's%20Images/Lantern-3.PNG"
                 ],
-                annualProductionUnits: 60000,
-                annualSalesRevenueUSD: 2700000,
-                annualProductionUnitsSecondCountry: 5000, // New field
-                annualSalesRevenueUSDSecondCountry: 225000 // New field
+                annualProductionUnits: "400k–2.0M",
+                annualSalesRevenueUSD: "$10M–$120M ($35M)",
+                // annualProductionUnits// secondCountry: 5000, // New field
+                // annualSalesRevenueUSD// secondCountry: 225000 // New field
             },
             {
-                id: 12,
+                id: 16,
                 name: "سفال یونانی",
                 englishName: "Greek Pottery",
                 country: "یونان",
-                secondCountry: "چین", // New field
+                // secondCountry: "چین", // New field
                 minPriceUSD: 10, // New field
                 maxPriceUSD: "+600", // New field
                 origin: "آتن (آرگولیس)، کورینت",
@@ -778,17 +898,17 @@
                     "Souvenir's%20Images/Greek-2.PNG",
                     "Souvenir's%20Images/Greek-3.jpg"
                 ],
-                annualProductionUnits: 000,
-                annualSalesRevenueUSD: 000,
-                annualProductionUnitsSecondCountry: 000, // New field
-                annualSalesRevenueUSDSecondCountry: 000 // New field
+                annualProductionUnits: "120k–700k",
+                annualSalesRevenueUSD: "$1.5M–$25M ($8.0M)",
+                // annualProductionUnits// secondCountry: 000, // New field
+                // annualSalesRevenueUSD// secondCountry: 000 // New field
             },
             {
-                id: 13,
+                id: 17,
                 name: "دامن اسکاتلندی",
                 englishName: "Kilt",
                 country: "Scotland",
-                secondCountry: "چین", // New field
+                // secondCountry: "چین", // New field
                 minPriceUSD: 10, // New field
                 maxPriceUSD: 100, // New field
                 origin: "آتن (آرگولیس)، کورینت",
@@ -808,17 +928,17 @@
                     "Souvenir's%20Images/kilt-2.jpg",
                     "Souvenir's%20Images/kilt-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "80k–450k",
+                annualSalesRevenueUSD: "$4M–$80M ($20M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
             {
-                id: 14,
+                id: 18,
                 name: "شیشه مورانو",
                 englishName: "Murano Glass",
                 country: "ایتالیا",
-                secondCountry: "چین", // New field
+                // secondCountry: "چین", // New field
                 minPriceUSD: 10, // New field
                 maxPriceUSD: 100, // New field
                 origin: "آتن (آرگولیس)، کورینت",
@@ -838,17 +958,17 @@
                     "Souvenir's%20Images/murano-2.jpg",
                     "Souvenir's%20Images/murano-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "200k–1.0M",
+                annualSalesRevenueUSD: "$10M–$120M ($40M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
             {
-                id: 15,
+                id: 19,
                 name: "کُوکِه‌شی",
                 englishName: "Kokeshi",
                 country: "ژاپن",
-                secondCountry: "چین", // New field
+                // secondCountry: "چین", // New field
                 minPriceUSD: 10, // New field
                 maxPriceUSD: 100, // New field
                 origin: "آتن (آرگولیس)، کورینت",
@@ -869,17 +989,17 @@
                     "Souvenir's%20Images/kokeshi-2.jpg",
                     "Souvenir's%20Images/kokeshi-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "80k–400k",
+                annualSalesRevenueUSD: "$0.6M–$8M ($2.8M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
             {
-                id: 16,
-                name: "کاشی‌های آزولجو",
-                englishName: "Azulejo Tiles",
-                country: "پرتغال",
-                secondCountry: "چین", // New field
+                id: 20,
+                name: "گوی‌های برفی",
+                englishName: "Snowglobes",
+                country: "-",
+                // secondCountry: "چین", // New field
                 minPriceUSD: 10, // New field
                 maxPriceUSD: 100, // New field
                 origin: "آتن (آرگولیس)، کورینت",
@@ -900,17 +1020,79 @@
                     "Souvenir's%20Images/azujelos-2.jpeg",
                     "Souvenir's%20Images/azujelos-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "80k–400k",
+                annualSalesRevenueUSD: "$0.8M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 21,
+                name: "کیوسک تلفن قرمز",
+                englishName: "Red Phone Booth",
+                country: "بریتانیا",
+                // secondCountry: "چین", // New field
+                minPriceUSD: 10, // New field
+                maxPriceUSD: 100, // New field
+                origin: "آتن (آرگولیس)، کورینت",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 30,
+                localPrice: "00 EUR",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "خاک رس، رنگ‌های معدنی",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/azujelos.jpg",
+                    "Souvenir's%20Images/azujelos-1.jpg",
+                    "Souvenir's%20Images/azujelos-2.jpeg",
+                    "Souvenir's%20Images/azujelos-3.jpg"
+                ],
+                annualProductionUnits: "80k–400k",
+                annualSalesRevenueUSD: "$0.8M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 22,
+                name: "کاشی‌های آزولجو",
+                englishName: "Azulejo Tiles",
+                country: "پرتغال",
+                // secondCountry: "چین", // New field
+                minPriceUSD: 10, // New field
+                maxPriceUSD: 100, // New field
+                origin: "آتن (آرگولیس)، کورینت",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 30,
+                localPrice: "00 EUR",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "خاک رس، رنگ‌های معدنی",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/azujelos.jpg",
+                    "Souvenir's%20Images/azujelos-1.jpg",
+                    "Souvenir's%20Images/azujelos-2.jpeg",
+                    "Souvenir's%20Images/azujelos-3.jpg"
+                ],
+                annualProductionUnits: "80k–400k",
+                annualSalesRevenueUSD: "$0.8M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
              {
-                id: 17,
+                id: 23,
                 name: "چینی و سفال سنتی",
                 englishName: "Porcelain",
                 country: "چین",
-                secondCountry: "؟یونان", // New field
+                // secondCountry: "؟یونان", // New field
                 minPriceUSD: 10, // New field
                 maxPriceUSD: 100, // New field
                 origin: "جیجانگ (موسوم به مرکز ظروف چینی)",
@@ -930,17 +1112,79 @@
                     "Souvenir's%20Images/porcelain-4.jpeg",
                     "Souvenir's%20Images/porcelain-5.jpeg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "5.0M–30M",
+                annualSalesRevenueUSD: "$50M–$800M ($200M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
             {
-                id: 18,
+                id: 24,
+                name: "مجسمه‌های ترول نروژی",
+                englishName: "Norwegian Troll figurines",
+                country: "نروژ",
+                // secondCountry: "چین", // New field
+                minPriceUSD: 10, // New field
+                maxPriceUSD: 100, // New field
+                origin: "آتن (آرگولیس)، کورینت",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 30,
+                localPrice: "00 EUR",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "خاک رس، رنگ‌های معدنی",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/azujelos.jpg",
+                    "Souvenir's%20Images/azujelos-1.jpg",
+                    "Souvenir's%20Images/azujelos-2.jpeg",
+                    "Souvenir's%20Images/azujelos-3.jpg"
+                ],
+                annualProductionUnits: "80k–400k",
+                annualSalesRevenueUSD: "$0.8M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 25,
+                name: "حکاکی‌های مائوری پونامو (سنگ سبز)",
+                englishName: "Māori Pounamu (Greenstone) carvings",
+                country: "نیوزلند",
+                // secondCountry: "چین", // New field
+                minPriceUSD: 10, // New field
+                maxPriceUSD: 100, // New field
+                origin: "آتن (آرگولیس)، کورینت",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 30,
+                localPrice: "00 EUR",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "خاک رس، رنگ‌های معدنی",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/azujelos.jpg",
+                    "Souvenir's%20Images/azujelos-1.jpg",
+                    "Souvenir's%20Images/azujelos-2.jpeg",
+                    "Souvenir's%20Images/azujelos-3.jpg"
+                ],
+                annualProductionUnits: "80k–400k",
+                annualSalesRevenueUSD: "$0.8M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 26,
                 name: "پتوی ساراپه",
                 englishName: "Sarape",
                 country: "مکزیک",
-                secondCountry: "؟یونان", // New field
+                // secondCountry: "؟یونان", // New field
                 minPriceUSD: 10, // New field
                 maxPriceUSD: 100, // New field
                 origin: "جیجانگ (موسوم به مرکز ظروف چینی)",
@@ -960,17 +1204,17 @@
                     "Souvenir's%20Images/sarape-2.jpg",
                     "Souvenir's%20Images/sarape-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "60k–400k",
+                annualSalesRevenueUSD: "$0.6M–$12M ($3.2M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
             {
-                id: 19,
+                id: 27,
                 name: "کلاه بره",
                 englishName: "Beret",
                 country: "فرانسه",
-                secondCountry: "؟یونان", // New field
+                // secondCountry: "؟یونان", // New field
                 minPriceUSD: 10, // New field
                 maxPriceUSD: 100, // New field
                 origin: "جیجانگ (موسوم به مرکز ظروف چینی)",
@@ -990,17 +1234,79 @@
                     "Souvenir's%20Images/beret-2.jpg",
                     "Souvenir's%20Images/beret-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "400k–2.5M",
+                annualSalesRevenueUSD: "$8M–$60M ($25M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
             {
-                id: 20,
+                id: 28,
+                name: "سرامیک‌های آبی دلفت",
+                englishName: "Delft Blue ceramics",
+                country: "هلند",
+                // secondCountry: "چین", // New field
+                minPriceUSD: 10, // New field
+                maxPriceUSD: 100, // New field
+                origin: "آتن (آرگولیس)، کورینت",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 30,
+                localPrice: "00 EUR",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "خاک رس، رنگ‌های معدنی",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/azujelos.jpg",
+                    "Souvenir's%20Images/azujelos-1.jpg",
+                    "Souvenir's%20Images/azujelos-2.jpeg",
+                    "Souvenir's%20Images/azujelos-3.jpg"
+                ],
+                annualProductionUnits: "80k–400k",
+                annualSalesRevenueUSD: "$0.8M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 29,
+                name: "مجسمه مینیاتوری مسیح منجی",
+                englishName: "Christ the Redeemer miniature",
+                country: "برزیل",
+                // secondCountry: "چین", // New field
+                minPriceUSD: 10, // New field
+                maxPriceUSD: 100, // New field
+                origin: "آتن (آرگولیس)، کورینت",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 30,
+                localPrice: "00 EUR",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "خاک رس، رنگ‌های معدنی",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/azujelos.jpg",
+                    "Souvenir's%20Images/azujelos-1.jpg",
+                    "Souvenir's%20Images/azujelos-2.jpeg",
+                    "Souvenir's%20Images/azujelos-3.jpg"
+                ],
+                annualProductionUnits: "80k–400k",
+                annualSalesRevenueUSD: "$0.8M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 30,
                 name: "روآنا",
                 englishName: "Ruana",
                 country: "-",
-                secondCountry: "؟یونان", // New field
+                // secondCountry: "؟یونان", // New field
                 minPriceUSD: 10, // New field
                 maxPriceUSD: 100, // New field
                 origin: "جیجانگ (موسوم به مرکز ظروف چینی)",
@@ -1019,17 +1325,17 @@
                     "Souvenir's%20Images/ruana-1.jpg",
                     "Souvenir's%20Images/ruana-2.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "40k–300k",
+                annualSalesRevenueUSD: "$0.6M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
             {
-                id: 21,
+                id: 31,
                 name: "کیف وایو",
                 englishName: "Mochila Wayuu",
                 country: "ونزوئلا و کلمبیا",
-                secondCountry: "؟یونان", // New field
+                // secondCountry: "؟یونان", // New field
                 minPriceUSD: 10, // New field
                 maxPriceUSD: 100, // New field
                 origin: "جیجانگ (موسوم به مرکز ظروف چینی)",
@@ -1049,17 +1355,17 @@
                     "Souvenir's%20Images/mochila-2.jpg",
                     "Souvenir's%20Images/mochila-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "30k–200k",
+                annualSalesRevenueUSD: "$0.3M–$6M ($2.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
             {
-                id: 22,
+                id: 32,
                 name: "هموک سنتی",
                 englishName: "Hammock",
                 country: "ونزوئلا",
-                secondCountry: "؟یونان", // New field
+                // secondCountry: "؟یونان", // New field
                 minPriceUSD: 10, // New field
                 maxPriceUSD: 100, // New field
                 origin: "جیجانگ (موسوم به مرکز ظروف چینی)",
@@ -1079,17 +1385,75 @@
                     "Souvenir's%20Images/hammock-2.jpg",
                     "Souvenir's%20Images/hammock-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "300k–2.0M",
+                annualSalesRevenueUSD: "$5M–$80M ($30M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 33,
+                name: "عروسک مدرن داروما",
+                englishName: "Modern Daruma doll",
+                country: "ژاپن",
+                // secondCountry: "؟یونان", // New field
+                minPriceUSD: 10, // New field
+                maxPriceUSD: 100, // New field
+                origin: "جیجانگ (موسوم به مرکز ظروف چینی)",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 30,
+                localPrice: "215 CNY",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "کاشی بالک (فلدسپات و کائولین)",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/ruana-1.jpg",
+                    "Souvenir's%20Images/ruana-2.jpg"
+                ],
+                annualProductionUnits: "40k–300k",
+                annualSalesRevenueUSD: "$0.6M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 34,
+                name: "مجسمه مرلیون",
+                englishName: "Merlion figurine",
+                country: "سنگاپور",
+                // secondCountry: "؟یونان", // New field
+                minPriceUSD: 10, // New field
+                maxPriceUSD: 100, // New field
+                origin: "جیجانگ (موسوم به مرکز ظروف چینی)",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 30,
+                localPrice: "215 CNY",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "کاشی بالک (فلدسپات و کائولین)",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/ruana-1.jpg",
+                    "Souvenir's%20Images/ruana-2.jpg"
+                ],
+                annualProductionUnits: "40k–300k",
+                annualSalesRevenueUSD: "$0.6M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
              {
-                id: 23,
+                id: 35,
                 name: "عُود (عطر) عربی",
                 englishName: "Arabian Oud",
                 country: "عربستان",
-                secondCountry: "؟ تونس یا امارات ؟", // New field
+                // secondCountry: "؟ تونس یا امارات ؟", // New field
                 minPriceUSD: 10, // New field
                 maxPriceUSD: 100, // New field
                 origin: "-",
@@ -1109,17 +1473,17 @@
                     "Souvenir's%20Images/arabian_oud-2.jpg",
                     "Souvenir's%20Images/arabian_oud-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "100k–400k",
+                annualSalesRevenueUSD: "$5M–$60M ($18M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
              {
-                id: 24,
+                id: 36,
                 name: "قالی و گلیم آذربایجانی",
                 englishName: "Xalça",
                 country: "جمهوری آذربایجان",
-                secondCountry: "؟ایران یا ترکیه؟", // New field
+                // secondCountry: "؟ایران یا ترکیه؟", // New field
                 minPriceUSD: 100, // New field
                 maxPriceUSD: 5000, // New field
                 origin: "پشم و ابریشم",
@@ -1139,17 +1503,17 @@
                     "Souvenir's%20Images/xalca-2.jpg",
                     "Souvenir's%20Images/xalca-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "30k–150k",
+                annualSalesRevenueUSD: "$0.5M–$12M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
              {
-                id: 25,
+                id: 37,
                 name: "کلاه خزدار روسی",
                 englishName: "Ushanka",
                 country: "روسیه",
-                secondCountry: "چین", // New field
+                // secondCountry: "چین", // New field
                 minPriceUSD: 20, // New field
                 maxPriceUSD: 150, // New field
                 origin: "ایرکوتسک، اوفا",
@@ -1169,17 +1533,17 @@
                     "Souvenir's%20Images/ushanka-2.jpg",
                     "Souvenir's%20Images/ushanka-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "200k–1.2M",
+                annualSalesRevenueUSD: "$1M–$18M ($6.5M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
              {
-                id: 26,
+                id: 38,
                 name: "ابریشم چینی",
                 englishName: "chinese silk",
                 country: "چین",
-                secondCountry: "هند", // New field
+                // secondCountry: "هند", // New field
                 minPriceUSD: 5, // New field
                 maxPriceUSD: 100, // New field
                 origin: "-",
@@ -1199,17 +1563,17 @@
                     "Souvenir's%20Images/silk-2.jpg",
                     "Souvenir's%20Images/silk-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "5.0M–30M",
+                annualSalesRevenueUSD: "$100M–$2B ($600M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
              {
-                id: 27,
+                id: 39,
                 name: "چشم نظر",
                 englishName: "Nazar Boncuğu",
                 country: "ترکیه",
-                secondCountry: "یونان", // New field
+                // secondCountry: "یونان", // New field
                 minPriceUSD: 1, // New field
                 maxPriceUSD: 20, // New field
                 origin: "استان آیدین (مرسین)",
@@ -1229,17 +1593,17 @@
                     "Souvenir's%20Images/nazar-2.jpg",
                     "Souvenir's%20Images/nazar-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "2.0M–12M",
+                annualSalesRevenueUSD: "$5M–$60M ($20M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
              {
-                id: 28,
+                id: 40,
                 name: "شال کشمیری",
                 englishName: "Kashmiri Shawl",
                 country: "منطقه کشمیر (هند و پاکستان)",
-                secondCountry: "هند و پاکستان", // New field
+                // secondCountry: "هند و پاکستان", // New field
                 minPriceUSD: 50, // New field
                 maxPriceUSD: 500, // New field
                 origin: "کشمیر",
@@ -1259,17 +1623,77 @@
                     "Souvenir's%20Images/shawls-1.jpg",
                     "Souvenir's%20Images/shawls-2.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "40k–250k",
+                annualSalesRevenueUSD: "$2M–$80M ($18M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 41,
+                name: "ماکت برج کج پیزا",
+                englishName: "Leaning Tower of Pisa model",
+                country: "ایتالیا",
+                // secondCountry: "هند و پاکستان", // New field
+                minPriceUSD: 50, // New field
+                maxPriceUSD: 500, // New field
+                origin: "کشمیر",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 150,
+                localPrice: "00 EUR",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "پشم کشمیر",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/shawls.jpg",
+                    "Souvenir's%20Images/shawls-1.jpg",
+                    "Souvenir's%20Images/shawls-2.jpg"
+                ],
+                annualProductionUnits: "40k–250k",
+                annualSalesRevenueUSD: "$2M–$80M ($18M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 42,
+                name: "ماکت جنگجویان سفالی",
+                englishName: "Terracotta Warriors replicas",
+                country: "چین",
+                // secondCountry: "هند و پاکستان", // New field
+                minPriceUSD: 50, // New field
+                maxPriceUSD: 500, // New field
+                origin: "کشمیر",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 150,
+                localPrice: "00 EUR",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "پشم کشمیر",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/shawls.jpg",
+                    "Souvenir's%20Images/shawls-1.jpg",
+                    "Souvenir's%20Images/shawls-2.jpg"
+                ],
+                annualProductionUnits: "40k–250k",
+                annualSalesRevenueUSD: "$2M–$80M ($18M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
              {
-                id: 29,
+                id: 43,
                 name: "کفش دست دوز",
                 englishName: "Khussa",
                 country: "پاکستان",
-                secondCountry: "-", // New field
+                // secondCountry: "-", // New field
                 minPriceUSD: 5, // New field
                 maxPriceUSD: 15, // New field
                 origin: "مولتان",
@@ -1289,17 +1713,17 @@
                     "Souvenir's%20Images/khussa-2.jpg",
                     "Souvenir's%20Images/khussa-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "100k–700k",
+                annualSalesRevenueUSD: "$0.5M–$12M ($4.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
              {
-                id: 30,
+                id: 44,
                 name: "دَله",
                 englishName: "Dallah",
                 country: "عربستان?",
-                secondCountry: "?امارات", // New field
+                // secondCountry: "?امارات", // New field
                 minPriceUSD: 20, // New field
                 maxPriceUSD: 200, // New field
                 origin: "آتن، کرت",
@@ -1320,17 +1744,17 @@
                     "Souvenir's%20Images/dallah-3.jpg",
                     "Souvenir's%20Images/dallah-4.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "40k–250k",
+                annualSalesRevenueUSD: "$0.5M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
             {
-                id: 31,
+                id: 45,
                 name: "ماکت اماکن دیدنی",
                 englishName: "Burj Khalifa Souvenir",
                 country: "امارات",
-                secondCountry: "چین", // New field
+                // secondCountry: "چین", // New field
                 minPriceUSD: 10, // New field
                 maxPriceUSD: 100, // New field
                 origin: "دبی",
@@ -1350,17 +1774,17 @@
                     "Souvenir's%20Images/burj-2.jpg",
                     "Souvenir's%20Images/burj-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "300k–1.8M",
+                annualSalesRevenueUSD: "$1.2M–$18M ($6.5M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
             {
-                id: 32,
+                id: 46,
                 name: "ساری ابریشمی",
                 englishName: "Silk sarees",
                 country: "هند",
-                secondCountry: "بنگلادش", // New field
+                // secondCountry: "بنگلادش", // New field
                 minPriceUSD: 20, // New field
                 maxPriceUSD: 500, // New field
                 origin: "بمبئی، جنوب هند (کارناتاکا)",
@@ -1380,10 +1804,196 @@
                     "Souvenir's%20Images/sareens-2.jpg",
                     "Souvenir's%20Images/sareens-3.jpg"
                 ],
-                annualProductionUnits: 70000,
-                annualSalesRevenueUSD: 3850000,
-                annualProductionUnitsSecondCountry: 6000, // New field
-                annualSalesRevenueUSDSecondCountry: 330000 // New field
+                annualProductionUnits: "1.0M–8.0M",
+                annualSalesRevenueUSD: "$200M–$3B ($900M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 47,
+                name: "مجسمه اینوکسوک",
+                englishName: "Inuksuk figurine",
+                country: "کانادا",
+                // secondCountry: "?امارات", // New field
+                minPriceUSD: 20, // New field
+                maxPriceUSD: 200, // New field
+                origin: "آتن، کرت",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 50,
+                localPrice: "00 EUR",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "مس یا برنج",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/Dallah-1.jpg",
+                    "Souvenir's%20Images/dallah-2.jpg",
+                    "Souvenir's%20Images/dallah-3.jpg",
+                    "Souvenir's%20Images/dallah-4.jpg"
+                ],
+                annualProductionUnits: "40k–250k",
+                annualSalesRevenueUSD: "$0.5M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 48,
+                name: "کلاه حصیری سنتی",
+                englishName: "Vueltiado",
+                country: "کلمبیا",
+                // secondCountry: "?امارات", // New field
+                minPriceUSD: 20, // New field
+                maxPriceUSD: 200, // New field
+                origin: "آتن، کرت",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 50,
+                localPrice: "00 EUR",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "مس یا برنج",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/Dallah-1.jpg",
+                    "Souvenir's%20Images/dallah-2.jpg",
+                    "Souvenir's%20Images/dallah-3.jpg",
+                    "Souvenir's%20Images/dallah-4.jpg"
+                ],
+                annualProductionUnits: "40k–250k",
+                annualSalesRevenueUSD: "$0.5M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 49,
+                name: "کلاه پاناما",
+                englishName: "Panama Hat",
+                country: "اکوادور",
+                // secondCountry: "?امارات", // New field
+                minPriceUSD: 20, // New field
+                maxPriceUSD: 200, // New field
+                origin: "آتن، کرت",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 50,
+                localPrice: "00 EUR",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "مس یا برنج",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/Dallah-1.jpg",
+                    "Souvenir's%20Images/dallah-2.jpg",
+                    "Souvenir's%20Images/dallah-3.jpg",
+                    "Souvenir's%20Images/dallah-4.jpg"
+                ],
+                annualProductionUnits: "40k–250k",
+                annualSalesRevenueUSD: "$0.5M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 50,
+                name: "کاستنت",
+                englishName: "Castanets",
+                country: "اسپانیا",
+                // secondCountry: "?امارات", // New field
+                minPriceUSD: 20, // New field
+                maxPriceUSD: 200, // New field
+                origin: "آتن، کرت",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 50,
+                localPrice: "00 EUR",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "مس یا برنج",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/Dallah-1.jpg",
+                    "Souvenir's%20Images/dallah-2.jpg",
+                    "Souvenir's%20Images/dallah-3.jpg",
+                    "Souvenir's%20Images/dallah-4.jpg"
+                ],
+                annualProductionUnits: "40k–250k",
+                annualSalesRevenueUSD: "$0.5M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 51,
+                name: "خروس بارسلوس",
+                englishName: "Rooster of Barcelos",
+                country: "پرتغال",
+                // secondCountry: "?امارات", // New field
+                minPriceUSD: 20, // New field
+                maxPriceUSD: 200, // New field
+                origin: "آتن، کرت",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 50,
+                localPrice: "00 EUR",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "مس یا برنج",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/Dallah-1.jpg",
+                    "Souvenir's%20Images/dallah-2.jpg",
+                    "Souvenir's%20Images/dallah-3.jpg",
+                    "Souvenir's%20Images/dallah-4.jpg"
+                ],
+                annualProductionUnits: "40k–250k",
+                annualSalesRevenueUSD: "$0.5M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
+            },
+            {
+                id: 52,
+                name: "تخم‌مرغ‌های رنگی",
+                englishName: "Pysanky",
+                country: "اوکراین",
+                // secondCountry: "?امارات", // New field
+                minPriceUSD: 20, // New field
+                maxPriceUSD: 200, // New field
+                origin: "آتن، کرت",
+                story: "سفالگری در یونان باستان هنری برجسته بود و داستان‌های اساطیری و زندگی روزمره را به تصویر می‌کشید. امروزه این سفال‌ها نمادی از تاریخ و هنر کهن یونان هستند.",
+                description: "ظروف سفالی دست‌ساز با طرح‌های الهام گرفته از هنر یونان باستان, شامل گلدان‌ها، کاسه‌ها و مجسمه‌های کوچک.",
+                avgPriceUSD: 50,
+                localPrice: "00 EUR",
+                category: ["صنایع دستی", "دکوری", "تاریخی", "هنری"],
+                audience: ["علاقه‌مندان به هنر", "علاقه‌مندان به تاریخ", "بزرگسالان", "کلکسیونرها"],
+                materials: "مس یا برنج",
+                usage: "دکور منزل، ظروف کاربردی، کلکسیون",
+                culturalValue: 9,
+                economicValue: 7,
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Souvenir's%20Images/Dallah-1.jpg",
+                    "Souvenir's%20Images/dallah-2.jpg",
+                    "Souvenir's%20Images/dallah-3.jpg",
+                    "Souvenir's%20Images/dallah-4.jpg"
+                ],
+                annualProductionUnits: "40k–250k",
+                annualSalesRevenueUSD: "$0.5M–$8M ($3.0M)",
+                // annualProductionUnits// secondCountry: 6000, // New field
+                // annualSalesRevenueUSD// secondCountry: 330000 // New field
             },
             // You can add more product objects here by copying and pasting the structure above.
         ].map(p => ({
@@ -1406,8 +2016,8 @@
                 website: "www.dfs.com",
                 salesVolume: "000",
                 areaSqM: "000",
-                length: 00, 
-                width: 00,  
+                // length: 00, 
+                // width: 00,  
                 productsSold: ["محصولات فرهنگی و سوغاتی کشور میزبان", "مد و اکسسوری", "برندها"],
                 location: "دفتر مرکزی در شهر تسیم شا تسوی، کاولون",
                 type: "chain", // New field
@@ -1426,8 +2036,8 @@
                 website: "www.shamrockgiftcompany.com",
                 salesVolume: "000",
                 areaSqM: "000",
-                length: 00,
-                width: 00,
+                // length: 00,
+                // width: 00,
                 productsSold: ["از اسباب‌بازی‌ها و هدیه‌های سرگرم‌کننده تا فهرستی از سوغاتی‌ها باکیفیت و بسته‌بندی درخور"],
                 location: "دوبلین",
                 type: "chain", // New field
@@ -1447,8 +2057,8 @@
                 website: "casahernanz.es",
                 salesVolume: "00",
                 areaSqM: "00",
-                length: 00,
-                width: 00,
+                // length: 00,
+                // width: 00,
                 productsSold: ["رشته و طناب (مصنوعی و طبیعی، شامل چرم)", "مجسمه‌های تزئینی از اسبارتو (گیاه بومی)" ,"تورهای تزئینی، ورزشی و ساختمانی" ,"کیسه‌های جوت و پیته" ,"سبدهای حصیری از جنس ممرز یا اسبارتو" ,"کفش‌های سنتی اسپانیایی"],
                 location: "Calle de Toledo, 18 28005 Madrid",
                 type: "retail", // New field
@@ -1468,8 +2078,8 @@
                 website: "worldofsouvenir.hu",
                 salesVolume: "00",
                 areaSqM: "00",
-                length: 00,
-                width: 00,
+                // length: 00,
+                // width: 00,
                 productsSold: ["بسیاری از کالاها از هنرمندان محلی تهیه شده و بازتاب‌دهنده فرهنگ مردمی مجارستان هستند" ,"دست‌بافته‌ها" ,"سرامیک‌های سنتی" ,"سوغاتی‌هایی با هویت فرهنگی مجارستان "],
                 location: ["Budapest V., 10 Deák Ferenc Street", "Budapest VI., 14 Király Street"],
                 type: "retail", // New field
@@ -1489,8 +2099,8 @@
                 website: "bringfrancehome.com",
                 salesVolume: "00",
                 areaSqM: "00",
-                length: 00,
-                width: 00,
+                // length: 00,
+                // width: 00,
                 productsSold: ["لیوان Duralex", "مجسمه‌های تزئینی از اسبارتو (گیاه بومی)" ,"سوغاتی‌های شهری" ,"چاقوهای Opinel" ,"دکوری‌های فرانسوی" ,"غذاهای محلی"],
                 location: "3 rue de Birague Place des Vosges 4ème arrondissement",
                 type: "retail", // New field
@@ -1512,8 +2122,8 @@
                 website: "fancythatoflondon.com",
                 salesVolume: "00",
                 areaSqM: "00",
-                length: 00,
-                width: 00,
+                // length: 00,
+                // width: 00,
                 productsSold: ["سوغاتی‌های لندن: ماگ، تی‌شرت، شال، کارت‌پستال، اکسسوری‌های نوولتی و غیره"],
                 location: ["48 Great Russell Street, London, WC1B 3PA", "32-34 Haymarket Chinatown London SW1Y 4TP"],
                 type: "retail", // New field
@@ -1535,8 +2145,8 @@
                 website: "ibasen.co.jp",
                 salesVolume: "00",
                 areaSqM: "00",
-                length: 00,
-                width: 00,
+                // length: 00,
+                // width: 00,
                 productsSold: ["خرده فروشی ژاپنی", "بادبزن تاشو", "بادبزن اوچیوا", "بادبزن تزئینی", "چاپ‌های اوکی‌یوئه"],
                 location: ["4-1 Kobunacho, Nihonbashi, Chuo-ku, Tokyo, 103-0024"],
                 type: "retail", // New field
@@ -1556,8 +2166,8 @@
                 website: "frankenmuthclock.com",
                 salesVolume: "00",
                 areaSqM: "00",
-                length: 00,
-                width: 00,
+                // length: 00,
+                // width: 00,
                 productsSold: ["ساعت‌های آلمانی", "سوغاتی‌های آلمانی", "هدایای اصیل آلمانی"],
                 location: ["966 S. Main St.Frankenmuth, MI 48734"],
                 type: "retail", // New field
@@ -1577,8 +2187,8 @@
                 website: "souvenirparadies.de",
                 salesVolume: "00",
                 areaSqM: "00",
-                length: 00,
-                width: 00,
+                // length: 00,
+                // width: 00,
                 productsSold: ["استین‌های (لیوان‌های آلمانی) مینیاتوری", "مجسمه‌های هومل", "ساعت‌های کوکو"],
                 location: ["Römerberg 15 60311 Frankfurt am Main"],
                 type: "retail", // New field
@@ -1593,13 +2203,202 @@
             },
             {
                 id: 10,
+                name: "Japan House London",
+                country: "بریتانیا",
+                website: "souvenirparadies.de",
+                salesVolume: "00",
+                areaSqM: "00",
+                // length: 00,
+                // width: 00,
+                productsSold: ["استین‌های (لیوان‌های آلمانی) مینیاتوری", "مجسمه‌های هومل", "ساعت‌های کوکو"],
+                location: ["Römerberg 15 60311 Frankfurt am Main"],
+                type: "retail", // New field
+                storeAge: "یافت نشد", // New field for retail
+                specialNotes: "فروشگاهفروشگاه Souvenir Paradies در فرانکفورت، آلمان، یکی از مقاصد محبوب برای خرید سوغاتی‌های سنتی آلمانی است. این فروشگاه مجموعه‌ای گسترده از سوغاتی‌های اصیل آلمانی را ارائه می‌دهد", // New field
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Store/paradise-1.PNG",
+                    "Store/paradise-2.jpg",
+                    "Store/paradise-3.jpg"
+                ]
+            },
+            {
+                id: 11,
+                name: "TENOHA Milano",
+                country: "ایتالیا",
+                website: "souvenirparadies.de",
+                salesVolume: "00",
+                areaSqM: "00",
+                // length: 00,
+                // width: 00,
+                productsSold: ["استین‌های (لیوان‌های آلمانی) مینیاتوری", "مجسمه‌های هومل", "ساعت‌های کوکو"],
+                location: ["Römerberg 15 60311 Frankfurt am Main"],
+                type: "retail", // New field
+                storeAge: "یافت نشد", // New field for retail
+                specialNotes: "فروشگاهفروشگاه Souvenir Paradies در فرانکفورت، آلمان، یکی از مقاصد محبوب برای خرید سوغاتی‌های سنتی آلمانی است. این فروشگاه مجموعه‌ای گسترده از سوغاتی‌های اصیل آلمانی را ارائه می‌دهد", // New field
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Store/paradise-1.PNG",
+                    "Store/paradise-2.jpg",
+                    "Store/paradise-3.jpg"
+                ]
+            },
+            {
+                id: 12,
+                name: "Tienda Casa de México",
+                country: "اسپانیا",
+                website: "souvenirparadies.de",
+                salesVolume: "00",
+                areaSqM: "00",
+                // length: 00,
+                // width: 00,
+                productsSold: ["استین‌های (لیوان‌های آلمانی) مینیاتوری", "مجسمه‌های هومل", "ساعت‌های کوکو"],
+                location: ["Römerberg 15 60311 Frankfurt am Main"],
+                type: "retail", // New field
+                storeAge: "یافت نشد", // New field for retail
+                specialNotes: "فروشگاهفروشگاه Souvenir Paradies در فرانکفورت، آلمان، یکی از مقاصد محبوب برای خرید سوغاتی‌های سنتی آلمانی است. این فروشگاه مجموعه‌ای گسترده از سوغاتی‌های اصیل آلمانی را ارائه می‌دهد", // New field
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Store/paradise-1.PNG",
+                    "Store/paradise-2.jpg",
+                    "Store/paradise-3.jpg"
+                ]
+            },
+            {
+                id: 13,
+                name: "Turkish Bazaar Kuala Lumpur",
+                country: "مالزی",
+                website: "souvenirparadies.de",
+                salesVolume: "00",
+                areaSqM: "00",
+                // length: 00,
+                // width: 00,
+                productsSold: ["استین‌های (لیوان‌های آلمانی) مینیاتوری", "مجسمه‌های هومل", "ساعت‌های کوکو"],
+                location: ["Römerberg 15 60311 Frankfurt am Main"],
+                type: "retail", // New field
+                storeAge: "یافت نشد", // New field for retail
+                specialNotes: "فروشگاهفروشگاه Souvenir Paradies در فرانکفورت، آلمان، یکی از مقاصد محبوب برای خرید سوغاتی‌های سنتی آلمانی است. این فروشگاه مجموعه‌ای گسترده از سوغاتی‌های اصیل آلمانی را ارائه می‌دهد", // New field
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Store/paradise-1.PNG",
+                    "Store/paradise-2.jpg",
+                    "Store/paradise-3.jpg"
+                ]
+            },
+            {
+                id: 14,
+                name: "Bazaar Marroquino São Paulo",
+                country: "برزیل",
+                website: "souvenirparadies.de",
+                salesVolume: "00",
+                areaSqM: "00",
+                // length: 00,
+                // width: 00,
+                productsSold: ["استین‌های (لیوان‌های آلمانی) مینیاتوری", "مجسمه‌های هومل", "ساعت‌های کوکو"],
+                location: ["Römerberg 15 60311 Frankfurt am Main"],
+                type: "retail", // New field
+                storeAge: "یافت نشد", // New field for retail
+                specialNotes: "فروشگاهفروشگاه Souvenir Paradies در فرانکفورت، آلمان، یکی از مقاصد محبوب برای خرید سوغاتی‌های سنتی آلمانی است. این فروشگاه مجموعه‌ای گسترده از سوغاتی‌های اصیل آلمانی را ارائه می‌دهد", // New field
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Store/paradise-1.PNG",
+                    "Store/paradise-2.jpg",
+                    "Store/paradise-3.jpg"
+                ]
+            },
+            {
+                id: 15,
+                name: "Svetlana’s Russian Souvenir Shop",
+                country: "-",
+                website: "souvenirparadies.de",
+                salesVolume: "00",
+                areaSqM: "00",
+                // length: 00,
+                // width: 00,
+                productsSold: ["استین‌های (لیوان‌های آلمانی) مینیاتوری", "مجسمه‌های هومل", "ساعت‌های کوکو"],
+                location: ["Römerberg 15 60311 Frankfurt am Main"],
+                type: "retail", // New field
+                storeAge: "یافت نشد", // New field for retail
+                specialNotes: "فروشگاهفروشگاه Souvenir Paradies در فرانکفورت، آلمان، یکی از مقاصد محبوب برای خرید سوغاتی‌های سنتی آلمانی است. این فروشگاه مجموعه‌ای گسترده از سوغاتی‌های اصیل آلمانی را ارائه می‌دهد", // New field
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Store/paradise-1.PNG",
+                    "Store/paradise-2.jpg",
+                    "Store/paradise-3.jpg"
+                ]
+            },
+            {
+                id: 16,
+                name: "The Mosaic Store",
+                country: "استرالیا",
+                website: "souvenirparadies.de",
+                salesVolume: "00",
+                areaSqM: "00",
+                // length: 00,
+                // width: 00,
+                productsSold: ["استین‌های (لیوان‌های آلمانی) مینیاتوری", "مجسمه‌های هومل", "ساعت‌های کوکو"],
+                location: ["Römerberg 15 60311 Frankfurt am Main"],
+                type: "retail", // New field
+                storeAge: "یافت نشد", // New field for retail
+                specialNotes: "فروشگاهفروشگاه Souvenir Paradies در فرانکفورت، آلمان، یکی از مقاصد محبوب برای خرید سوغاتی‌های سنتی آلمانی است. این فروشگاه مجموعه‌ای گسترده از سوغاتی‌های اصیل آلمانی را ارائه می‌دهد", // New field
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Store/paradise-1.PNG",
+                    "Store/paradise-2.jpg",
+                    "Store/paradise-3.jpg"
+                ]
+            },
+            {
+                id: 17,
+                name: "MONO JAPAN STORE",
+                country: "هلند",
+                website: "souvenirparadies.de",
+                salesVolume: "00",
+                areaSqM: "00",
+                // length: 00,
+                // width: 00,
+                productsSold: ["استین‌های (لیوان‌های آلمانی) مینیاتوری", "مجسمه‌های هومل", "ساعت‌های کوکو"],
+                location: ["Römerberg 15 60311 Frankfurt am Main"],
+                type: "retail", // New field
+                storeAge: "یافت نشد", // New field for retail
+                specialNotes: "فروشگاهفروشگاه Souvenir Paradies در فرانکفورت، آلمان، یکی از مقاصد محبوب برای خرید سوغاتی‌های سنتی آلمانی است. این فروشگاه مجموعه‌ای گسترده از سوغاتی‌های اصیل آلمانی را ارائه می‌دهد", // New field
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Store/paradise-1.PNG",
+                    "Store/paradise-2.jpg",
+                    "Store/paradise-3.jpg"
+                ]
+            },
+            {
+                id: 18,
+                name: "Iittala Antwerpen",
+                country: "بلژیک",
+                website: "souvenirparadies.de",
+                salesVolume: "00",
+                areaSqM: "00",
+                // length: 00,
+                // width: 00,
+                productsSold: ["استین‌های (لیوان‌های آلمانی) مینیاتوری", "مجسمه‌های هومل", "ساعت‌های کوکو"],
+                location: ["Römerberg 15 60311 Frankfurt am Main"],
+                type: "retail", // New field
+                storeAge: "یافت نشد", // New field for retail
+                specialNotes: "فروشگاهفروشگاه Souvenir Paradies در فرانکفورت، آلمان، یکی از مقاصد محبوب برای خرید سوغاتی‌های سنتی آلمانی است. این فروشگاه مجموعه‌ای گسترده از سوغاتی‌های اصیل آلمانی را ارائه می‌دهد", // New field
+                // Updated to imageUrls array
+                imageUrls: [
+                    "Store/paradise-1.PNG",
+                    "Store/paradise-2.jpg",
+                    "Store/paradise-3.jpg"
+                ]
+            },
+            {
+                id: 19,
                 name: "German Gift Outlet",
                 country: "ایالات متحده",
                 website: "germangiftoutlet.com",
                 salesVolume: "00",
                 areaSqM: "00",
-                length: 00,
-                width: 00,
+                // length: 00,
+                // width: 00,
                 productsSold: ["استین‌های (لیوان‌های آلمانی) آبجوی آلمانی", "کلاه‌های اکتبرفست", "هدایا و سوغاتی‌های آلمانی"],
                 location: ["618 South Pacific Hwy Talent, Oregon 97540"],
                 type: "retail", // New field
@@ -1613,14 +2412,14 @@
                 ]
             },
             {
-                id: 11,
+                id: 20,
                 name: "Artgaudí",
                 country: "ااسپانیا",
                 website: "artgaudi.com",
                 salesVolume: "00",
                 areaSqM: "00",
-                length: 00,
-                width: 00,
+                // length: 00,
+                // width: 00,
                 productsSold: ["سوغاتی‌های هنری", "لوازم دکوری"],
                 location: ["C/ de la Tapineria, 10. 08002 Barcelona"],
                 type: "retail", // New field
@@ -1635,14 +2434,14 @@
                 ]
             },
             {
-                id: 12,
+                id: 21,
                 name: "Souvenir italia",
                 country: "ایتالیا",
                 website: "artgaudi.com",
                 salesVolume: "00",
                 areaSqM: "00",
-                length: 00,
-                width: 00,
+                // length: 00,
+                // width: 00,
                 productsSold: ["سوغاتی‌های هنری", "لوازم دکوری"],
                 location: ["C/ de la Tapineria, 10. 08002 Barcelona"],
                 type: "retail", // New field
@@ -1663,8 +2462,8 @@
                 website: "https://www.traveltreasures.eg",
                 salesVolume: "950000.00",
                 areaSqM: "180",
-                length: 18,
-                width: 10,
+                // length: 18,
+                // width: 10,
                 productsSold: ["اشیای دکوری", "محصولات سنگی"],
                 location: "مرکز خرید مدرن",
                 type: "chain", // New field
@@ -1682,8 +2481,8 @@
                 website: "https://www.uniquekeepsakes.ir",
                 salesVolume: "2000000.00",
                 areaSqM: "300",
-                length: 30,
-                width: 10,
+                // length: 30,
+                // width: 10,
                 productsSold: ["فرش و گلیم", "سرامیک‌های دست‌ساز"],
                 location: "دهکده صنایع دستی",
                 type: "retail", // New field
@@ -1702,8 +2501,8 @@
                 website: "https://www.wanderlustwares.it",
                 salesVolume: "1800000.00",
                 areaSqM: "220",
-                length: 22,
-                width: 10,
+                // length: 22,
+                // width: 10,
                 productsSold: ["اشیای دکوری", "سرامیک‌های دست‌ساز"],
                 location: "خیابان خرید لوکس",
                 type: "chain", // New field
@@ -1721,8 +2520,8 @@
                 website: "https://www.heritagehandiworks.us",
                 salesVolume: "1100000.00",
                 areaSqM: "170",
-                length: 17,
-                width: 10,
+                // length: 17,
+                // width: 10,
                 productsSold: ["کلاه و پوشاک", "ابزار سنتی"],
                 location: "بلوار ساحلی",
                 type: "retail", // New field
@@ -1741,8 +2540,8 @@
                 website: "https://www.thelocaltouch.au",
                 salesVolume: "750000.00",
                 areaSqM: "130",
-                length: 13,
-                width: 10,
+                // length: 13,
+                // width: 10,
                 productsSold: ["ابزار سنتی", "صنایع دستی چوبی"],
                 location: "منطقه هنری",
                 type: "retail", // New field
@@ -1761,8 +2560,8 @@
                 website: "https://www.passportpresents.ma",
                 salesVolume: "900000.00",
                 areaSqM: "160",
-                length: 16,
-                width: 10,
+                // length: 16,
+                // width: 10,
                 productsSold: ["محصولات چرمی", "سفالینه‌های رنگی"],
                 location: "بازار بزرگ، منطقه تاریخی",
                 type: "chain", // New field
@@ -1781,8 +2580,8 @@
                 website: "#",
                 salesVolume: "100000.00", // Placeholder, as it's retail
                 areaSqM: "50",
-                length: 5,
-                width: 10,
+                // length: 5,
+                // width: 10,
                 productsSold: ["ماکت برج ایفل", "جاکلیدی", "کارت پستال"],
                 location: "کوچه پس‌کوچه‌های مون‌مارتر، پاریس",
                 type: "retail",
@@ -1800,8 +2599,8 @@
                 website: "#",
                 salesVolume: "120000.00", // Placeholder, as it's retail
                 areaSqM: "70",
-                length: 7,
-                width: 10,
+                // length: 7,
+                // width: 10,
                 productsSold: ["ماگ آبجو", "چوب‌تراشی", "عروسک‌های سنتی"],
                 location: "مرکز شهر قدیمی، مونیخ",
                 type: "retail",
@@ -1819,8 +2618,8 @@
                 website: "#",
                 salesVolume: "90000.00", // Placeholder, as it's retail
                 areaSqM: "60",
-                length: 6,
-                width: 10,
+                // length: 6,
+                // width: 10,
                 productsSold: ["سفال یونانی", "مجسمه‌های کوچک", "روغن زیتون"],
                 location: "نزدیک آکروپولیس، آتن",
                 type: "retail",
@@ -1838,8 +2637,8 @@
                 website: "#",
                 salesVolume: "180000.00", // Placeholder, as it's retail
                 areaSqM: "90",
-                length: 9,
-                width: 10,
+                // length: 9,
+                // width: 10,
                 productsSold: ["ظروف مسی", "قالیچه‌های کوچک", "لامپ‌های موزاییک"],
                 location: "بازار بزرگ، استانبول",
                 type: "retail",
@@ -1857,8 +2656,8 @@
                 website: "#",
                 salesVolume: "70000.00", // Placeholder, as it's retail
                 areaSqM: "45",
-                length: 4.5,
-                width: 10,
+                // length: 4.5,
+                // width: 10,
                 productsSold: ["پاپیروس", "مجسمه‌های فرعون", "جواهرات مصری"],
                 location: "نزدیک اهرام جیزه، قاهره",
                 type: "retail",
@@ -1876,7 +2675,7 @@
         const baseCountriesInfo = [
             {
                 name: "فرانسه",
-                tourists: "89.4 میلیون نفر",
+                tourists: "97.5 میلیون نفر",
                 avgSpending: 218.5, 
                 souvenirCost: 15, 
                 transportationCost: 633, 
@@ -1889,7 +2688,7 @@
             },
             {
                 name: "اسپانیا",
-                tourists: "83.7 میلیون نفر",
+                tourists: "84.5 میلیون نفر",
                 avgSpending: 228,
                 souvenirCost: 31,
                 transportationCost: 688.5,
@@ -1902,7 +2701,7 @@
             },
             {
                 name: "آمریکا",
-                tourists: "79.3 میلیون نفر",
+                tourists: "66.5 میلیون نفر",
                 avgSpending: 269.5,
                 souvenirCost: 22.5,
                 transportationCost: 641.5,
@@ -1915,7 +2714,7 @@
             },
             {
                 name: "چین",
-                tourists: "65.7 میلیون نفر",
+                tourists: "20؟؟؟ میلیون نفر",
                 avgSpending: 211,
                 souvenirCost: 12.5,
                 transportationCost: 784.5,
@@ -1928,7 +2727,7 @@
             },
             {
                 name: "ایتالیا",
-                tourists: "64.5 میلیون نفر",
+                tourists: "~57.5 میلیون نفر",
                 avgSpending: 196.5,
                 souvenirCost: 17,
                 transportationCost: 178.5,
@@ -1941,7 +2740,7 @@
             },
             {
                 name: "ترکیه",
-                tourists: "51.2 میلیون نفر",
+                tourists: "~55 میلیون نفر",
                 avgSpending: 176,
                 souvenirCost: 25.5,
                 transportationCost: 567,
@@ -1954,7 +2753,7 @@
             },
             {
                 name: "مکزیک",
-                tourists: "45 میلیون نفر",
+                tourists: "~42 میلیون نفر",
                 avgSpending: 190.5,
                 souvenirCost: 53,
                 transportationCost: 582.5,
@@ -1967,7 +2766,7 @@
             },
             {
                 name: "تایلند",
-                tourists: "39.8 میلیون نفر",
+                tourists: "~28.15 میلیون نفر",
                 avgSpending: 91.5,
                 souvenirCost: 14,
                 transportationCost: 176.5,
@@ -1980,7 +2779,7 @@
             },
             {
                 name: "آلمان",
-                tourists: "39.6 میلیون نفر",
+                tourists: "~35 میلیون نفر",
                 avgSpending: 66,
                 souvenirCost: 230,
                 transportationCost: 746.5,
@@ -1993,7 +2792,7 @@
             },
             {
                 name: "بریتانیا",
-                tourists: "39.4 میلیون نفر",
+                tourists: "~37 میلیون نفر",
                 avgSpending: 335,
                 souvenirCost: 70.5,
                 transportationCost: 722.5,
@@ -2006,7 +2805,7 @@
             },
             {
                 name: "روسیه",
-                tourists: "38 میلیون نفر",
+                tourists: "??? میلیون نفر",
                 avgSpending: 100,
                 souvenirCost: 13,
                 transportationCost: 35,
@@ -2019,7 +2818,7 @@
             },
             {
                 name: "امارات",
-                tourists: "38 میلیون نفر",
+                tourists: "~17.15 میلیون نفر",
                 avgSpending: 100,
                 souvenirCost: 13,
                 transportationCost: 35,
@@ -2032,7 +2831,7 @@
             },
             {
                 name: "آذربایجان",
-                tourists: "38 میلیون نفر",
+                tourists: "~2.09 میلیون نفر",
                 avgSpending: 100,
                 souvenirCost: 13,
                 transportationCost: 35,
@@ -2045,7 +2844,7 @@
             },
             {
                 name: "عربستان",
-                tourists: "38 میلیون نفر",
+                tourists: "??? میلیون نفر",
                 avgSpending: 100,
                 souvenirCost: 13,
                 transportationCost: 35,
@@ -2058,7 +2857,7 @@
             },
             {
                 name: "هند",
-                tourists: "38 میلیون نفر",
+                tourists: "~9.2 میلیون نفر",
                 avgSpending: 100,
                 souvenirCost: 13,
                 transportationCost: 35,
@@ -2071,7 +2870,7 @@
             },
             {
                 name: "پاکستان",
-                tourists: "38 میلیون نفر",
+                tourists: "??? میلیون نفر",
                 avgSpending: 100,
                 souvenirCost: 13,
                 transportationCost: 35,
@@ -2084,7 +2883,59 @@
             },
             {
                 name: "قطر",
-                tourists: "38 میلیون نفر",
+                tourists: "??? میلیون نفر",
+                avgSpending: 100,
+                souvenirCost: 13,
+                transportationCost: 35,
+                accommodationCost: 45,
+                foodCost: 25,
+                annualTourismRevenue: "45 میلیارد دلار", // Added annual tourism revenue
+                perCapitaIncome: "42,000 دلار", // Added per capita income
+                popularProducts: ["ماکت اتوبوس لندن", "کلاه سلطنتی", "چای‌خوری"],
+                notes: "بریتانیا با تاریخ سلطنتی و نمادهای شهری، سوغاتی‌های کلاسیک و محبوب دارد."
+            },
+            {
+                name: "ارمنستان",
+                tourists: "??? میلیون نفر",
+                avgSpending: 100,
+                souvenirCost: 13,
+                transportationCost: 35,
+                accommodationCost: 45,
+                foodCost: 25,
+                annualTourismRevenue: "45 میلیارد دلار", // Added annual tourism revenue
+                perCapitaIncome: "42,000 دلار", // Added per capita income
+                popularProducts: ["ماکت اتوبوس لندن", "کلاه سلطنتی", "چای‌خوری"],
+                notes: "بریتانیا با تاریخ سلطنتی و نمادهای شهری، سوغاتی‌های کلاسیک و محبوب دارد."
+            },
+            {
+                name: "مالزی",
+                tourists: "??? میلیون نفر",
+                avgSpending: 100,
+                souvenirCost: 13,
+                transportationCost: 35,
+                accommodationCost: 45,
+                foodCost: 25,
+                annualTourismRevenue: "45 میلیارد دلار", // Added annual tourism revenue
+                perCapitaIncome: "42,000 دلار", // Added per capita income
+                popularProducts: ["ماکت اتوبوس لندن", "کلاه سلطنتی", "چای‌خوری"],
+                notes: "بریتانیا با تاریخ سلطنتی و نمادهای شهری، سوغاتی‌های کلاسیک و محبوب دارد."
+            },
+            {
+                name: "کویت",
+                tourists: "??? میلیون نفر",
+                avgSpending: 100,
+                souvenirCost: 13,
+                transportationCost: 35,
+                accommodationCost: 45,
+                foodCost: 25,
+                annualTourismRevenue: "45 میلیارد دلار", // Added annual tourism revenue
+                perCapitaIncome: "42,000 دلار", // Added per capita income
+                popularProducts: ["ماکت اتوبوس لندن", "کلاه سلطنتی", "چای‌خوری"],
+                notes: "بریتانیا با تاریخ سلطنتی و نمادهای شهری، سوغاتی‌های کلاسیک و محبوب دارد."
+            },
+            {
+                name: "مصر",
+                tourists: "??? میلیون نفر",
                 avgSpending: 100,
                 souvenirCost: 13,
                 transportationCost: 35,
@@ -2269,6 +3120,46 @@
                 economicLevels: { high: 35, medium: 45, low: 20 },
                 demographics: { retired: 15, couples: 30, solo: 25, youth: 15, family: 15 },
                 image: "Flags/Qatar.png"
+            },
+            {
+                id: 18,
+                country: "ارمنستان",
+                topDestinations: ["لندن", "ادینبورگ", "منچستر"],
+                travelPurposes: { business: 30, education: 20, leisure: 40, family: 10 },
+                ageGroups: { '18-25': 20, '26-40': 40, '41-60': 25, '60+': 15 },
+                economicLevels: { high: 35, medium: 45, low: 20 },
+                demographics: { retired: 15, couples: 30, solo: 25, youth: 15, family: 15 },
+                image: "Flags/armania.gif"
+            },
+            {
+                id: 19,
+                country: "مالزی",
+                topDestinations: ["لندن", "ادینبورگ", "منچستر"],
+                travelPurposes: { business: 30, education: 20, leisure: 40, family: 10 },
+                ageGroups: { '18-25': 20, '26-40': 40, '41-60': 25, '60+': 15 },
+                economicLevels: { high: 35, medium: 45, low: 20 },
+                demographics: { retired: 15, couples: 30, solo: 25, youth: 15, family: 15 },
+                image: "Flags/malaysia.gif"
+            },
+            {
+                id: 20,
+                country: "کویت",
+                topDestinations: ["لندن", "ادینبورگ", "منچستر"],
+                travelPurposes: { business: 30, education: 20, leisure: 40, family: 10 },
+                ageGroups: { '18-25': 20, '26-40': 40, '41-60': 25, '60+': 15 },
+                economicLevels: { high: 35, medium: 45, low: 20 },
+                demographics: { retired: 15, couples: 30, solo: 25, youth: 15, family: 15 },
+                image: "Flags/kuwait.gif"
+            },
+            {
+                id: 21,
+                country: "مصر",
+                topDestinations: ["لندن", "ادینبورگ", "منچستر"],
+                travelPurposes: { business: 30, education: 20, leisure: 40, family: 10 },
+                ageGroups: { '18-25': 20, '26-40': 40, '41-60': 25, '60+': 15 },
+                economicLevels: { high: 35, medium: 45, low: 20 },
+                demographics: { retired: 15, couples: 30, solo: 25, youth: 15, family: 15 },
+                image: "Flags/egypt.gif"
             },
             // You can add more country tourist analysis objects here by copying and pasting the structure above.
         ];
