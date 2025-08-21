@@ -3516,12 +3516,12 @@
                 `).join('');
 
                 // Conditionally display sales volume or store age
-                let salesOrAgeHtml = '';
-                if (store.type === 'chain') {
-                    salesOrAgeHtml = `<li class="flex justify-between"><strong>میزان فروش سالانه:</strong> <span>${parseFloat(store.salesVolume).toLocaleString()}$</span></li>`;
-                } else if (store.type === 'retail') {
-                    salesOrAgeHtml = `<li class="flex justify-between"><strong>قدمت فروشگاه:</strong> <span>${store.storeAge}</span></li>`;
-                }
+         //       let salesOrAgeHtml = '';
+           //     if (store.type === 'chain') {
+             //       salesOrAgeHtml = `<li class="flex justify-between"><strong>میزان فروش سالانه:</strong> <span>${parseFloat(store.salesVolume).toLocaleString()}$</span></li>`;
+               // } else if (store.type === 'retail') {
+                 //   salesOrAgeHtml = `<li class="flex justify-between"><strong>قدمت فروشگاه:</strong> <span>${store.storeAge}</span></li>`;
+                //}
 
                 storeModalBody.innerHTML = `
                     <div class="flex flex-col items-center mb-4">
@@ -3533,10 +3533,9 @@
                         <li class="flex justify-between"><strong>کشور:</strong> <span>${store.country}</span></li>
                         <li class="flex justify-between"><strong>نوع فروشگاه:</strong> <span>${store.type === 'chain' ? 'فروشگاه بزرگ زنجیره‌ای' : 'فروشگاه خرده‌فروشی'}</span></li>
                         <li class="flex justify-between"><strong>موقعیت جغرافیایی:</strong> <span>${store.location}</span></li>
-                        ${salesOrAgeHtml}
+                        <li class="flex justify-between"><strong>میزان فروش سالانه:</strong> <span>${parseFloat(store.salesVolume).toLocaleString()}$</span></li>
+                        <li class="flex justify-between"><strong>قدمت فروشگاه:</strong> <span>${store.storeAge}</span></li>
                         <li class="flex justify-between"><strong>مساحت:</strong> <span>${store.areaSqM} متر مربع</span></li>
-                        <li class="flex justify-between"><strong>طول:</strong> <span>${store.length} متر</span></li> 
-                        <li class="flex justify-between"><strong>عرض:</strong> <span>${store.width} متر</span></li>  
                         <li>
                             <strong>محصولات اصلی:</strong>
                             <ul class="list-disc list-inside mt-1 pr-4">
