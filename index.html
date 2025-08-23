@@ -2687,228 +2687,236 @@
 
         // --- Tourist Analysis Data ---
         const touristAnalysisData = [
-            {
-                id: 1,
-                country: "فرانسه",
-                topDestinations: ["پاریس", "نیس", "مارسی"],
-                travelPurposes: { business: 12, education: 3, leisure: 65, family: 20 },
-                ageGroups: { '<25': 18, '25-44': 45, '45-64': 27, '65+': 10 },
-                economicLevels: { Luxury: 5, Affluent: 30, Middle: 55, Low: 10 },
-                demographics: { retired: 3, couples: 38, solo: 22, Friends_Groups: 7, family: 30 },
-                image: "Flags/France.gif"
-            },
-            {
-                id: 2,
-                country: "اسپانیا",
-                topDestinations: ["بارسلونا", "مادرید", "سویا"],
-                travelPurposes: { business: 8, education: 4, leisure: 70, family: 18 },
-                ageGroups: { '<25': 18, '25-44': 47, '45-64': 25, '65+': 10 },
-                economicLevels: { Luxury: 4, Affluent: 26, Middle: 58, Low: 12 },
-                demographics: { retired: 3, couples: 40, solo: 20, Friends_Groups: 6, family: 31 },
-                image: "Flags/Spain.gif"
-            },
-            {
-                id: 3,
-                country: "آمریکا",
-                topDestinations: ["نیویورک", "لس آنجلس", "اورلاندو"],
-                travelPurposes: { business: 15, education: 5, leisure: 60, family: 20 },
-                ageGroups: { '<25': 20, '25-44': 45, '45-64': 25, '65+': 10 },
-                economicLevels: { Luxury: 8, Affluent: 34, Middle: 50, Low: 8 },
-                demographics: { retired: 20, couples: 30, solo: 20, Friends_Groups: 10, family: 20 },
-                image: "Flags/United%20State.gif"
-            },
-            {
-                id: 4,
-                country: "چین",
-                topDestinations: ["پکن", "شانگهای", "شیان"],
-                travelPurposes: { business: 20, education: 5, leisure: 55, family: 20 },
-                ageGroups: { '<25': 22, '25-44': 50, '45-64': 22, '65+': 6 },
-                economicLevels: { Luxury: 4, Affluent: 24, Middle: 60, Low: 12 },
-                demographics: { retired: 3, couples: 35, solo: 22, Friends_Groups: 10, family: 30 },
-                image: "Flags/China.gif"
-            },
-            {
-                id: 5,
-                country: "ایتالیا",
-                topDestinations: ["رم", "فلورانس", "ونیز"],
-                travelPurposes: { business: 10, education: 5, leisure: 70, family: 15 },
-                ageGroups: { '<25': 18, '25-44': 45, '45-64': 27, '65+': 10 },
-                economicLevels: { Luxury: 5, Affluent: 30, Middle: 55, Low: 10 },
-                demographics: { retired: 3, couples: 42, solo: 20, Friends_Groups: 5, family: 30 },
-                image: "Flags/Italy.gif"
-            },
-            {
-                id: 6,
-                country: "ترکیه",
-                topDestinations: ["استانبول", "کاپادوکیا", "آنتالیا"],
-                travelPurposes: { business: 8, education: 4, leisure: 65, family: 15, Religious: 8 },
-                ageGroups: { '<25': 20, '25-44': 48, '45-64': 24, '65+': 8 },
-                economicLevels: { Luxury: 4, Affluent: 24, Middle: 58, Low: 14 },
-                demographics: { retired: 3, couples: 36, solo: 22, Friends_Groups: 7, family: 32 },
-                image: "Flags/turkey.gif"
-            },
-            {
-                id: 7,
-                country: "مکزیک",
-                topDestinations: ["کانکون", "مکزیکو سیتی", "پلایا دل کارمن"],
-                travelPurposes: { business: 10, education: 5, leisure: 65, family: 20 },
-                ageGroups: { '<25': 22, '25-44': 46, '45-64': 24, '65+': 8 },
-                economicLevels: { Luxury: 5, Affluent: 25, Middle: 55, Low: 15 },
-                demographics: { retired: 2, couples: 38, solo: 20, Friends_Groups: 6, family: 34 },
-                image: "Flags/mexico.gif"
-            },
-            {
-                id: 8,
-                country: "تایلند",
-                topDestinations: ["بانکوک", "پوکت", "چیانگ مای"],
-                travelPurposes: { business: 10, education: 5, leisure: 75, family: 10 },
-                ageGroups: { '<25': 25, '25-44': 50, '45-64': 20, '65+': 5 },
-                economicLevels: { Luxury: 3, Affluent: 22, Middle: 55, Low: 20 },
-                demographics: { retired: 2, couples: 38, solo: 28, Friends_Groups: 6, family: 26 },
-                image: "Flags/thailand.gif"
-            },
-            {
-                id: 9,
-                country: "آلمان",
-                topDestinations: ["برلین", "مونیخ", "فرانکفورت"],
-                travelPurposes: { business: 25, education: 5, leisure: 55, family: 15 },
-                ageGroups: { '<25': 18, '25-44': 45, '45-64': 27, '65+': 10 },
-                economicLevels: { Luxury: 6, Affluent: 33, Middle: 52, Low: 9 },
-                demographics: { retired: 3, couples: 36, solo: 26, Friends_Groups: 7, family: 28 },
-                image: "Flags/Germany.gif"
-            },
-            {
-                id: 10,
-                country: "بریتانیا",
-                topDestinations: ["لندن", "ادینبورگ", "منچستر"],
-                travelPurposes: { business: 30, education: 20, leisure: 40, family: 10 },
-                ageGroups: { '<25': 20, '25-44': 40, '45-64': 25, '65+': 15 },
-                economicLevels: { Luxury: 5, Affluent: 30, Middle: 55, Low: 10 },
-                demographics: { retired: 15, couples: 30, solo: 25, Friends_Groups: 15, family: 15 },
-                image: "Flags/UK.gif"
-            },
-            {
-                id: 11,
-                country: "روسیه",
-                topDestinations: ["مسکو", "سن پترزبورگ", "سوچی / کازان"],
-                travelPurposes: { business: 25, education: 5, leisure: 50, family: 20 },
-                ageGroups: { '<25': 18, '25-44': 50, '45-64': 25, '65+': 7 },
-                economicLevels: { Luxury: 4, Affluent: 26, Middle: 58, Low: 12 },
-                demographics: { retired: 3, couples: 34, solo: 24, Friends_Groups: 7, family: 32 },
-                image: "Flags/Russia.png"
-            },
-            {
-                id: 12,
-                country: "امارات",
-                topDestinations: ["دبی", "ابوظبی", "شارجه"],
-                travelPurposes: { business: 25, education: 5, leisure: 50, family: 20 },
-                ageGroups: { '<25': 18, '25-44': 55, '45-64': 22, '65+': 5 },
-                economicLevels: { Luxury: 11, Affluent: 35, Middle: 48, Low: 6 },
-                demographics: { retired: 2, couples: 37, solo: 25, Friends_Groups: 6, family: 30 },
-                image: "Flags/UAE.png"
-            },
-            {
-                id: 13,
-                country: "آذربایجان",
-                topDestinations: ["باکو", "گابالا", "شکی"],
-                travelPurposes: { business: 30, education: 2, leisure: 50, family: 15, Religious: 3 },
-                ageGroups: { '<25': 18, '25-44': 50, '45-64': 25, '65+': 7 },
-                economicLevels: { Luxury: 3, Affluent: 22, Middle: 60, Low: 15 },
-                demographics: { retired: 2, couples: 34, solo: 22, Friends_Groups: 6, family: 36 },
-                image: "Flags/Azerbaijan.jpg"
-            },
-            {
-                id: 14,
-                country: "عربستان",
-                topDestinations: ["مکه", "مدینه", "ریاض/الولا"],
-                travelPurposes: { business: 15, education: 2, leisure: 20, family: 8, Religious: 55 },
-                ageGroups: { '<25': 15, '25-44': 40, '45-64': 35, '65+': 10 },
-                economicLevels: { Luxury: 10, Affluent: 30, Middle: 50, Low: 10 },
-                demographics: { retired: 6, couples: 28, solo: 18, Friends_Groups: 8, family: 40 },
-                image: "Flags/Saudi.png"
-            },
-            {
-                id: 15,
-                country: "هند",
-                topDestinations: ["دهلی/آگرا/جیپور (مثلث طلایی)", "گوا", "بمبئی/کرالا"],
-                travelPurposes: { business: 15, education: 3, leisure: 45, family: 30, Religious: 7 },
-                ageGroups: { '<25': 22, '25-44': 48, '45-64': 24, '65+': 6 },
-                economicLevels: { Luxury: 4, Affluent: 23, Middle: 58, Low: 15 },
-                demographics: { retired: 2, couples: 34, solo: 22, Friends_Groups: 6, family: 36 },
-                image: "Flags/India.png"
-            },
-            {
-                id: 16,
-                country: "پاکستان",
-                topDestinations: ["لاهور", "اسلام آباد/مناطق شمالی (هونزا، اسکاردو)", "کراچی"],
-                travelPurposes: { business: 10, education: 5, leisure: 35, family: 30, Religious: 20 },
-                ageGroups: { '<25': 22, '25-44': 48, '45-64': 24, '65+': 6 },
-                economicLevels: { Luxury: 3, Affluent: 19, Middle: 60, Low: 18 },
-                demographics: { retired: 2, couples: 32, solo: 20, Friends_Groups: 6, family: 40 },
-                image: "Flags/Pakistan.png"
-            },
-            {
-                id: 17,
-                country: "قطر",
-                topDestinations: ["دوحه (خلیج غربی، سوق واقف)", "الوکره", "الخور/ مروارید"],
-                travelPurposes: { business: 35, education: 5, leisure: 40, family: 20 },
-                ageGroups: { '<25': 18, '25-44': 55, '45-64': 22, '65+': 5 },
-                economicLevels: { Luxury: 10, Affluent: 33, Middle: 50, Low: 7 },
-                demographics: { retired: 2, couples: 36, solo: 26, Friends_Groups: 4, family: 32 },
-                image: "Flags/Qatar.png"
-            },
-            {
-                id: 18,
-                country: "ارمنستان",
-                topDestinations: ["ایروان", "دریاچه سوان", "دیلیجان/تاتو"],
-                travelPurposes: { business: 15, education: 5, leisure: 45, family: 35 },
-                ageGroups: { '<25': 18, '25-44': 50, '45-64': 25, '65+': 7 },
-                economicLevels: { Luxury: 2, Affluent: 18, Middle: 62, Low: 18 },
-                demographics: { retired: 1, couples: 34, solo: 22, Friends_Groups: 3, family: 40 },
-                image: "Flags/armania.gif"
-            },
-            {
-                id: 19,
-                country: "مالزی",
-                topDestinations: ["کوالالامپور", "پنانگ", "لنکاوی/بورنئو (صباح)"],
-                travelPurposes: { business: 10, education: 5, leisure: 65, family: 20 },
-                ageGroups: { '<25': 22, '25-44': 47, '45-64': 24, '65+': 7 },
-                economicLevels: { Luxury: 3, Affluent: 23, Middle: 58, Low: 16 },
-                demographics: { retired: 2, couples: 36, solo: 22, Friends_Groups: 4, family: 36 },
-                image: "Flags/malaysia.gif"
-            },
-            {
-                id: 20,
-                country: "کویت",
-                topDestinations: ["شهر کویت (خیابان ها، سوق المبارکیه)", "جزیره فایلاکا", "سلمیا"],
-                travelPurposes: { business: 40, education: 5, leisure: 35, family: 20 },
-                ageGroups: { '<25': 18, '25-44': 55, '45-64': 22, '65+': 5 },
-                economicLevels: { Luxury: 5, Affluent: 30, Middle: 55, Low: 10 },
-                demographics: { retired: 1, couples: 34, solo: 28, Friends_Groups: 3, family: 34 },
-                image: "Flags/kuwait.gif"
-            },
-            {
-                id: 21,
-                country: "مصر",
-                topDestinations: ["قاهره / جیزه (اهرام)", "اقصر/آسوان", "دریای سرخ (هورگادا/شارم)"],
-                travelPurposes: { business: 10, education: 5, leisure: 60, family: 20, Religious: 5 },
-                ageGroups: { '<25': 20, '25-44': 47, '45-64': 25, '65+': 8 },
-                economicLevels: { Luxury: 4, Affluent: 22, Middle: 56, Low: 18 },
-                demographics: { retired: 2, couples: 36, solo: 20, Friends_Groups: 4, family: 38 },
-                image: "Flags/egypt.gif"
-            },
-            // You can add more country tourist analysis objects here by copying and pasting the structure above.
-        ];
+    {
+        id: 1,
+        country: "فرانسه",
+        topDestinations: ["پاریس", "ریورای فرانسه", "کوهستان آلپ"],
+        travelPurposes: { "تفریح": 55, "کسب و کار": 20, "تحصیلات": 10, "خانواده و دوستان": 10, "مذهبی": 5 },
+        ageGroups: { '<25': 22, '25-44': 45, '45-64': 25, '65+': 8 },
+        economicLevels: { "لاکچری": 12, "ثروتمند": 40, "سطح متوسط": 40, "سطح پایین": 8 },
+        demographics: { "زوج": 30, "خانواده و دوستان": 25, "شخص": 25, "بازنشسته": 10, "گروهی": 10 },
+        image: "Flags/france.gif"
+    },
+    {
+        id: 2,
+        country: "اسپانیا",
+        topDestinations: ["بارسلونا", "مادرید", "جزایر قناری", "والنسیا"],
+        travelPurposes: { "تفریح": 65, "کسب و کار": 15, "تحصیلات": 5, "خانواده و دوستان": 10, "مذهبی": 5 },
+        ageGroups: { '<25': 25, '25-44': 48, '45-64': 20, '65+': 7 },
+        economicLevels: { "لاکچری": 8, "ثروتمند": 30, "سطح متوسط": 50, "سطح پایین": 12 },
+        demographics: { "زوج": 35, "گروهی": 20, "خانواده و دوستان": 20, "شخص": 15, "بازنشسته": 10 },
+        image: "Flags/spain.gif"
+    },
+    {
+        id: 3,
+        country: "آمریکا",
+        topDestinations: ["نیویورک", "لوس‌آنجلس", "فلوریدا", "واشنگتن"],
+        travelPurposes: { "کسب و کار": 25, "تفریح": 45, "تحصیلات": 15, "خانواده و دوستان": 10, "مذهبی": 5 },
+        ageGroups: { '<25': 20, '25-44': 40, '45-64': 30, '65+': 10 },
+        economicLevels: { "لاکچری": 15, "ثروتمند": 35, "سطح متوسط": 40, "سطح پایین": 10 },
+        demographics: { "زوج": 40, "خانواده و دوستان": 30, "شخص": 20, "بازنشسته": 5, "گروهی": 5 },
+        image: "Flags/usa.gif"
+    },
+    {
+        id: 4,
+        country: "چین",
+        topDestinations: ["پکن", "شانگهای", "هنگ کنگ"],
+        travelPurposes: { "کسب و کار": 30, "تفریح": 40, "تحصیلات": 15, "خانواده و دوستان": 10, "مذهبی": 5 },
+        ageGroups: { '<25': 25, '25-44': 50, '45-64': 20, '65+': 5 },
+        economicLevels: { "لاکچری": 10, "ثروتمند": 20, "سطح متوسط": 60, "سطح پایین": 10 },
+        demographics: { "زوج": 30, "خانواده و دوستان": 30, "شخص": 20, "گروهی": 15, "بازنشسته": 5 },
+        image: "Flags/china.gif"
+    },
+    {
+        id: 5,
+        country: "ایتالیا",
+        topDestinations: ["رم", "فلورانس", "ونیز"],
+        travelPurposes: { "تفریح": 60, "کسب و کار": 15, "تحصیلات": 5, "خانواده و دوستان": 15, "مذهبی": 5 },
+        ageGroups: { '<25': 15, '25-44': 45, '45-64': 30, '65+': 10 },
+        economicLevels: { "لاکچری": 10, "ثروتمند": 25, "سطح متوسط": 50, "سطح پایین": 15 },
+        demographics: { "زوج": 40, "خانواده و دوستان": 25, "شخص": 20, "بازنشسته": 10, "گروهی": 5 },
+        image: "Flags/italy.gif"
+    },
+    {
+        id: 6,
+        country: "آلمان",
+        topDestinations: ["برلین", "مونیخ", "فرانکفورت"],
+        travelPurposes: { "کسب و کار": 20, "تفریح": 50, "تحصیلات": 10, "خانواده و دوستان": 15, "مذهبی": 5 },
+        ageGroups: { '<25': 20, '25-44': 40, '45-64': 30, '65+': 10 },
+        economicLevels: { "لاکچری": 10, "ثروتمند": 30, "سطح متوسط": 50, "سطح پایین": 10 },
+        demographics: { "زوج": 35, "شخص": 25, "خانواده و دوستان": 20, "گروهی": 10, "بازنشسته": 10 },
+        image: "Flags/germany.gif"
+    },
+    {
+        id: 7,
+        country: "مکزیک",
+        topDestinations: ["کانکون", "مکزیکوسیتی", "پلا دل کارمن"],
+        travelPurposes: { "تفریح": 70, "کسب و کار": 10, "تحصیلات": 5, "خانواده و دوستان": 10, "مذهبی": 5 },
+        ageGroups: { '<25': 30, '25-44': 50, '45-64': 15, '65+': 5 },
+        economicLevels: { "لاکچری": 5, "ثروتمند": 20, "سطح متوسط": 60, "سطح پایین": 15 },
+        demographics: { "خانواده و دوستان": 40, "زوج": 30, "شخص": 15, "گروهی": 10, "بازنشسته": 5 },
+        image: "Flags/mexico.gif"
+    },
+    {
+        id: 8,
+        country: "تایلند",
+        topDestinations: ["بانکوک", "پاتایا", "پوکت", "چیانگ مای"],
+        travelPurposes: { "تفریح": 75, "کسب و کار": 5, "تحصیلات": 5, "خانواده و دوستان": 10, "مذهبی": 5 },
+        ageGroups: { '<25': 35, '25-44': 50, '45-64': 10, '65+': 5 },
+        economicLevels: { "لاکچری": 3, "ثروتمند": 15, "سطح متوسط": 60, "سطح پایین": 22 },
+        demographics: { "خانواده و دوستان": 35, "شخص": 25, "زوج": 20, "گروهی": 15, "بازنشسته": 5 },
+        image: "Flags/thailand.gif"
+    },
+    {
+        id: 9,
+        country: "ژاپن",
+        topDestinations: ["توکیو", "کیوتو", "اوساکا"],
+        travelPurposes: { "تفریح": 60, "کسب و کار": 15, "تحصیلات": 10, "خانواده و دوستان": 10, "مذهبی": 5 },
+        ageGroups: { '<25': 20, '25-44': 45, '45-64': 30, '65+': 5 },
+        economicLevels: { "لاکچری": 10, "ثروتمند": 30, "سطح متوسط": 50, "سطح پایین": 10 },
+        demographics: { "زوج": 35, "شخص": 20, "خانواده و دوستان": 20, "گروهی": 15, "بازنشسته": 10 },
+        image: "Flags/japan.gif"
+    },
+    {
+        id: 10,
+        country: "هند",
+        topDestinations: ["دهلی", "بمبئی", "جیپور"],
+        travelPurposes: { "مذهبی": 35, "تفریح": 25, "کسب و کار": 20, "خانواده و دوستان": 15, "تحصیلات": 5 },
+        ageGroups: { '<25': 25, '25-44': 50, '45-64': 20, '65+': 5 },
+        economicLevels: { "لاکچری": 2, "ثروتمند": 10, "سطح متوسط": 55, "سطح پایین": 33 },
+        demographics: { "خانواده و دوستان": 50, "شخص": 20, "زوج": 15, "گروهی": 10, "بازنشسته": 5 },
+        image: "Flags/india.gif"
+    },
+    {
+        id: 11,
+        country: "بریتانیا",
+        topDestinations: ["لندن", "ادینبورگ", "منچستر"],
+        travelPurposes: { "کسب و کار": 25, "تفریح": 45, "تحصیلات": 15, "خانواده و دوستان": 10, "مذهبی": 5 },
+        ageGroups: { '<25': 20, '25-44': 40, '45-64': 30, '65+': 10 },
+        economicLevels: { "لاکچری": 15, "ثروتمند": 35, "سطح متوسط": 40, "سطح پایین": 10 },
+        demographics: { "زوج": 30, "خانواده و دوستان": 30, "شخص": 20, "گروهی": 10, "بازنشسته": 10 },
+        image: "Flags/uk.gif"
+    },
+    {
+        id: 12,
+        country: "کانادا",
+        topDestinations: ["تورنتو", "ونکوور", "مونترال"],
+        travelPurposes: { "کسب و کار": 20, "تفریح": 50, "تحصیلات": 10, "خانواده و دوستان": 15, "مذهبی": 5 },
+        ageGroups: { '<25': 20, '25-44': 45, '45-64': 25, '65+': 10 },
+        economicLevels: { "لاکچری": 10, "ثروتمند": 30, "سطح متوسط": 50, "سطح پایین": 10 },
+        demographics: { "زوج": 35, "خانواده و دوستان": 25, "شخص": 20, "گروهی": 15, "بازنشسته": 5 },
+        image: "Flags/canada.gif"
+    },
+    {
+        id: 13,
+        country: "استرالیا",
+        topDestinations: ["سیدنی", "ملبورن", "گلد کوست"],
+        travelPurposes: { "تفریح": 60, "کسب و کار": 15, "تحصیلات": 10, "خانواده و دوستان": 10, "مذهبی": 5 },
+        ageGroups: { '<25': 25, '25-44': 45, '45-64': 25, '65+': 5 },
+        economicLevels: { "لاکچری": 8, "ثروتمند": 30, "سطح متوسط": 50, "سطح پایین": 12 },
+        demographics: { "زوج": 35, "شخص": 20, "خانواده و دوستان": 20, "گروهی": 15, "بازنشسته": 10 },
+        image: "Flags/australia.gif"
+    },
+    {
+        id: 14,
+        country: "کره جنوبی",
+        topDestinations: ["سئول", "بوسان", "جزیره ججو"],
+        travelPurposes: { "تفریح": 50, "کسب و کار": 20, "تحصیلات": 15, "خانواده و دوستان": 10, "مذهبی": 5 },
+        ageGroups: { '<25': 30, '25-44': 50, '45-64': 15, '65+': 5 },
+        economicLevels: { "لاکچری": 10, "ثروتمند": 20, "سطح متوسط": 60, "سطح پایین": 10 },
+        demographics: { "شخص": 30, "زوج": 25, "گروهی": 20, "خانواده و دوستان": 15, "بازنشسته": 10 },
+        image: "Flags/korea.gif"
+    },
+    {
+        id: 15,
+        country: "تونس",
+        topDestinations: ["حمامات", "سوسه", "جزیره جربه"],
+        travelPurposes: { "تفریح": 70, "کسب و کار": 10, "تحصیلات": 5, "خانواده و دوستان": 10, "مذهبی": 5 },
+        ageGroups: { '<25': 25, '25-44': 45, '45-64': 25, '65+': 5 },
+        economicLevels: { "لاکچری": 5, "ثروتمند": 20, "سطح متوسط": 55, "سطح پایین": 20 },
+        demographics: { "زوج": 35, "خانواده و دوستان": 30, "شخص": 20, "گروهی": 10, "بازنشسته": 5 },
+        image: "Flags/tunisia.gif"
+    },
+    {
+        id: 16,
+        country: "یونان",
+        topDestinations: ["آتن", "جزیره سانتورینی", "جزیره کرت"],
+        travelPurposes: { "تفریح": 75, "کسب و کار": 5, "تحصیلات": 5, "خانواده و دوستان": 10, "مذهبی": 5 },
+        ageGroups: { '<25': 20, '25-44': 45, '45-64': 25, '65+': 10 },
+        economicLevels: { "لاکچری": 8, "ثروتمند": 25, "سطح متوسط": 55, "سطح پایین": 12 },
+        demographics: { "زوج": 40, "شخص": 20, "خانواده و دوستان": 20, "گروهی": 10, "بازنشسته": 10 },
+        image: "Flags/greece.gif"
+    },
+    {
+        id: 17,
+        country: "پرتغال",
+        topDestinations: ["لیسبون", "پورتو", "منطقه آلگاروه"],
+        travelPurposes: { "تفریح": 60, "کسب و کار": 15, "تحصیلات": 10, "خانواده و دوستان": 10, "مذهبی": 5 },
+        ageGroups: { '<25': 25, '25-44': 50, '45-64': 20, '65+': 5 },
+        economicLevels: { "لاکچری": 5, "ثروتمند": 25, "سطح متوسط": 55, "سطح پایین": 15 },
+        demographics: { "زوج": 35, "خانواده و دوستان": 30, "شخص": 20, "گروهی": 10, "بازنشسته": 5 },
+        image: "Flags/portugal.gif"
+    },
+    {
+        id: 18,
+        country: "عربستان",
+        topDestinations: ["مکه", "مدینه", "ریاض"],
+        travelPurposes: { "مذهبی": 70, "کسب و کار": 15, "تفریح": 10, "خانواده و دوستان": 5 },
+        ageGroups: { '<25': 10, '25-44': 40, '45-64': 40, '65+': 10 },
+        economicLevels: { "لاکچری": 20, "ثروتمند": 40, "سطح متوسط": 30, "سطح پایین": 10 },
+        demographics: { "بازنشسته": 20, "خانواده و دوستان": 40, "شخص": 20, "گروهی": 10, "زوج": 10 },
+        image: "Flags/saudi.gif"
+    },
+    {
+        id: 19,
+        country: "آذربایجان",
+        topDestinations: ["باکو", "قوبا", "گنجا"],
+        travelPurposes: { "تفریح": 50, "کسب و کار": 20, "تحصیلات": 10, "خانواده و دوستان": 15, "مذهبی": 5 },
+        ageGroups: { '<25': 20, '25-44': 45, '45-64': 30, '65+': 5 },
+        economicLevels: { "لاکچری": 5, "ثروتمند": 20, "سطح متوسط": 60, "سطح پایین": 15 },
+        demographics: { "زوج": 30, "شخص": 25, "خانواده و دوستان": 20, "گروهی": 15, "بازنشسته": 10 },
+        image: "Flags/azerbaijan.gif"
+    },
+    {
+        id: 20,
+        country: "سنگاپور",
+        topDestinations: ["جزیره سنتوزا", "گاردنز بای د بای", "مارینا بای سندز"],
+        travelPurposes: { "کسب و کار": 30, "تفریح": 40, "تحصیلات": 15, "خانواده و دوستان": 10, "مذهبی": 5 },
+        ageGroups: { '<25': 20, '25-44': 50, '45-64': 25, '65+': 5 },
+        economicLevels: { "لاکچری": 20, "ثروتمند": 40, "سطح متوسط": 35, "سطح پایین": 5 },
+        demographics: { "شخص": 30, "زوج": 25, "خانواده و دوستان": 20, "گروهی": 15, "بازنشسته": 10 },
+        image: "Flags/singapore.gif"
+    },
+    {
+        id: 21,
+        country: "مصر",
+        topDestinations: ["قاهره / جیزه (اهرام)", "اقصر/آسوان", "دریای سرخ (هورگادا/شارم)"],
+        travelPurposes: { "کسب و کار": 10, "تحصیلات": 5, "تفریح": 60, "خانواده و دوستان": 20, "مذهبی": 5 },
+        ageGroups: { '<25': 20, '25-44': 47, '45-64': 25, '65+': 8 },
+        economicLevels: { "لاکچری": 4, "ثروتمند": 22, "سطح متوسط": 56, "سطح پایین": 18 },
+        demographics: { "بازنشسته": 2, "زوج": 36, "شخص": 20, "گروهی": 4, "خانواده و دوستان": 38 },
+        image: "Flags/egypt.gif"
+    },
+    {
+        id: 22,
+        country: "روسیه",
+        topDestinations: ["مسکو", "سن پترزبورگ", "سوچی"],
+        travelPurposes: { "تفریح": 45, "کسب و کار": 25, "تحصیلات": 10, "خانواده و دوستان": 15, "مذهبی": 5 },
+        ageGroups: { '<25': 20, '25-44': 50, '45-64': 25, '65+': 5 },
+        economicLevels: { "لاکچری": 5, "ثروتمند": 20, "سطح متوسط": 60, "سطح پایین": 15 },
+        demographics: { "زوج": 30, "خانواده و دوستان": 30, "شخص": 20, "گروهی": 10, "بازنشسته": 10 },
+        image: "Flags/russia.gif"
+    }
+];
 
-        // Global Tourist Statistics Calculation
-        const globalTouristStats = {
-            topDestinations: {},
-            travelPurposes: { business: 0, education: 0, leisure: 0, family: 0, Religious: 0 },
-            ageGroups: { '<25': 18, '25-44': 36, '45-64': 28, '65+': 18 },
-            economicLevels: { Luxury: 13, Affluent: 27, Middle: 38, Low: 22 },
-            demographics: { retired: 2, couples: 28, solo: 32, Friends_Groups: 14, family: 26 },
-            totalCountries: touristAnalysisData.length
-        };
+const globalTouristStats = {
+    topDestinations: {},
+    travelPurposes: { "کسب و کار": 0, "تحصیلات": 0, "تفریح": 0, "خانواده و دوستان": 0, "مذهبی": 0 },
+    ageGroups: { '<25': 18, '25-44': 36, '45-64': 28, '65+': 18 },
+    economicLevels: { "لاکچری": 13, "ثروتمند": 27, "سطح متوسط": 38, "سطح پایین": 22 },
+    demographics: { "بازنشسته": 2, "زوج": 28, "شخص": 32, "گروهی": 14, "خانواده و دوستان": 26 },
+    totalCountries: touristAnalysisData.length
+};
 
         touristAnalysisData.forEach(data => {
             data.topDestinations.forEach(dest => {
