@@ -398,7 +398,38 @@
 
     <script>
         // Helper function to assign score categories
-پ
+document.addEventListener('DOMContentLoaded', () => {
+    // Other existing code...
+
+    // فراخوانی تمامی توابع رندرینگ برای نمایش محتوا در بارگذاری اولیه
+    renderProductCards(products);
+    renderProductFilters(products);
+    renderCountryCards(countriesData);
+    renderStoreCards(storesData);
+    renderTouristAnalysisCards(touristAnalysisData);
+
+    // اضافه کردن رویداد کلیک به کارت‌های کشورها
+    const countryGrid = document.getElementById('country-grid');
+    countryGrid.addEventListener('click', (e) => {
+        const countryCard = e.target.closest('.country-card');
+        if (countryCard) {
+            const countryId = countryCard.dataset.countryId;
+            showCountryDetailModal(countryId);
+        }
+    });
+
+    // اضافه کردن رویداد کلیک به کارت‌های تحلیل گردشگران
+    const touristAnalysisGrid = document.getElementById('tourist-analysis-grid');
+    touristAnalysisGrid.addEventListener('click', (e) => {
+        const touristCard = e.target.closest('.tourist-analysis-card');
+        if (touristCard) {
+            const countryName = touristCard.dataset.country;
+            showTouristDetailModal(countryName);
+        }
+    });
+    
+    // ... سایر کدهای موجود در این بخش
+});
         function getScoreCategory(score) {
             if (score >= 8) return "بالا (8-10)";
             if (score >= 5) return "متوسط (5-7)";
@@ -3905,38 +3936,7 @@ const globalTouristStats = {
     });
     // Other code ...
 });
-document.addEventListener('DOMContentLoaded', () => {
-    // Other existing code...
 
-    // فراخوانی تمامی توابع رندرینگ برای نمایش محتوا در بارگذاری اولیه
-    renderProductCards(products);
-    renderProductFilters(products);
-    renderCountryCards(countriesData);
-    renderStoreCards(storesData);
-    renderTouristAnalysisCards(touristAnalysisData);
-
-    // اضافه کردن رویداد کلیک به کارت‌های کشورها
-    const countryGrid = document.getElementById('country-grid');
-    countryGrid.addEventListener('click', (e) => {
-        const countryCard = e.target.closest('.country-card');
-        if (countryCard) {
-            const countryId = countryCard.dataset.countryId;
-            showCountryDetailModal(countryId);
-        }
-    });
-
-    // اضافه کردن رویداد کلیک به کارت‌های تحلیل گردشگران
-    const touristAnalysisGrid = document.getElementById('tourist-analysis-grid');
-    touristAnalysisGrid.addEventListener('click', (e) => {
-        const touristCard = e.target.closest('.tourist-analysis-card');
-        if (touristCard) {
-            const countryName = touristCard.dataset.country;
-            showTouristDetailModal(countryName);
-        }
-    });
-    
-    // ... سایر کدهای موجود در این بخش
-});
     </script>
     
 </body>
