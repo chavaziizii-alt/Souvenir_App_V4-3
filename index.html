@@ -3903,7 +3903,29 @@ const globalTouristStats = {
             closeCountryDetailModal();
         }
     });
+    renderProductCards(products);
+    renderProductFilters(products);
+    renderCountryCards(countriesData);
+    renderStoreCards(storesData);
+    renderTouristAnalysisCards(touristAnalysisData);
 
+    const countryGrid = document.getElementById('country-grid');
+    countryGrid.addEventListener('click', (e) => {
+        const countryCard = e.target.closest('.country-card');
+        if (countryCard) {
+            const countryId = countryCard.dataset.countryId;
+            showCountryDetailModal(countryId);
+        }
+    });
+
+    const touristAnalysisGrid = document.getElementById('tourist-analysis-grid');
+    touristAnalysisGrid.addEventListener('click', (e) => {
+        const touristCard = e.target.closest('.tourist-analysis-card');
+        if (touristCard) {
+            const countryName = touristCard.dataset.country;
+            showTouristDetailModal(countryName);
+        }
+    });
     // Other code ...
 });
 
