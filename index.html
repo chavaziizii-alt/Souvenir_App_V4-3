@@ -398,18 +398,7 @@
 
     <script>
         // Helper function to assign score categories
-        document.addEventListener('DOMContentLoaded', () => {
-    // Other existing code...
-
-    // Initial render for the main explorer tab
-    renderProductCards(products);
-    renderProductFilters(products);
-    renderCountryCards(countriesData);
-    renderStoreCards(storesData);
-    renderTouristAnalysisCards(touristAnalysisData);
-    
-    // Other existing code...
-});
+پ
         function getScoreCategory(score) {
             if (score >= 8) return "بالا (8-10)";
             if (score >= 5) return "متوسط (5-7)";
@@ -3885,8 +3874,8 @@ const globalTouristStats = {
             });
 
             // Initial render for the new tab (hidden by default)
-            // renderGlobalTouristStats(); // Will be called when tab is activated
-            // renderTouristAnalysisCards(touristAnalysisData); // Will be called when tab is activated
+             renderGlobalTouristStats(); // Will be called when tab is activated
+             renderTouristAnalysisCards(touristAnalysisData); // Will be called when tab is activated
         });
         document.addEventListener('DOMContentLoaded', () => {
     // Other code ...
