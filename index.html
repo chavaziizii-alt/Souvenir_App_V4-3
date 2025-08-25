@@ -8,10 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?"خانواده و دوستان"=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-"خانواده و دوستان": 'Vazirmatn', sans-serif;
+            font-family: 'Vazirmatn', sans-serif;
             background-color: #FDFBF7;
             color: #3D405B;
         }
@@ -49,10 +49,10 @@
         /* Styles for image album in modals */
         .image-album {
             display: flex;
-            overf"سطح پایین"-x: auto;
+            overflow-x: auto;
             gap: 1rem; /* Space between images */
             padding-bottom: 1rem; /* Space for scrollbar */
-            -webkit-overf"سطح پایین"-scrolling: touch; /* Smooth scrolling on iOS */
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
             scrollbar-// width: thin; /* Firefox */
             scrollbar-color: #34658F #F1F1F1; /* Firefox */
         }
@@ -179,7 +179,7 @@
             </div>
 
             <!-- Nested sections for Ranking -->
-            <section id="nested-ranking" class="content-section hidden bg-white p-6 rounded-lg shadow overf"سطح پایین"-x-auto mb-6">
+            <section id="nested-ranking" class="content-section hidden bg-white p-6 rounded-lg shadow overflow-x-auto mb-6">
                  <h2 class="text-2xl font-semibold text-[#34658F] mb-4 text-center">رتبه‌بندی فرهنگی و اقتصادی محصولات</h2>
                  <p class="text-center text-gray-600 mb-6 max-w-3xl mx-auto">این جدول محصولات را بر اساس ترکیبی از "ارزش افزوده اقتصادی برای کشور مبدأ" و "اصالت و پشتوانه فرهنگی" رتبه‌بندی می‌کند. محصولاتی که امتیاز فرهنگی بالاتری دارند, ریشه‌های عمیق‌تری در تاریخ و هنر یک ملت دارند. با کلیک بر روی عنوان هر ستون می‌توانید جدول را مرتب کنید.</p>
                 
@@ -195,7 +195,7 @@
                             <option value="all">همه</option>
                             <option value="high">بالا (8-10)</option>
                             <option value="medium">متوسط (5-7)</option>
-                            <option value=""سطح پایین"">پایین (1-4)</option>
+                            <option value="low">پایین (1-4)</option>
                         </select>
                     </div>
                     <div>
@@ -204,7 +204,7 @@
                             <option value="all">همه</option>
                             <option value="high">بالا (8-10)</option>
                             <option value="medium">متوسط (5-7)</option>
-                            <option value=""سطح پایین"">پایین (1-4)</option>
+                            <option value="low">پایین (1-4)</option>
                         </select>
                     </div>
                     <div>
@@ -222,7 +222,7 @@
                             <option value="all">همه</option>
                             <option value="high">بالا (8-10)</option>
                             <option value="medium">متوسط (5-7)</option>
-                            <option value=""سطح پایین"">پایین (1-4)</option>
+                            <option value="low">پایین (1-4)</option>
                         </select>
                     </div>
                     <div>
@@ -231,7 +231,7 @@
                             <option value="all">همه</option>
                             <option value="high">بسیار انحصاری (8-10)</option>
                             <option value="medium">متوسط (5-7)</option>
-                            <option value=""سطح پایین"">کم (1-4)</option>
+                            <option value="low">کم (1-4)</option>
                         </select>
                     </div>
                      <div>
@@ -240,7 +240,7 @@
                             <option value="all">همه</option>
                             <option value="high">بالا (8-10)</option>
                             <option value="medium">متوسط (5-7)</option>
-                            <option value=""سطح پایین"">پایین (1-4)</option>
+                            <option value="low">پایین (1-4)</option>
                         </select>
                     </div>
                     <div>
@@ -249,7 +249,7 @@
                             <option value="all">همه</option>
                             <option value="high">بالا (8-10)</option>
                             <option value="medium">متوسط (5-7)</option>
-                            <option value=""سطح پایین"">پایین (1-4)</option>
+                            <option value="low">پایین (1-4)</option>
                         </select>
                     </div>
                 </div>
@@ -341,7 +341,7 @@
     </main>
 
     <div id="product-modal" class="modal fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center p-4 hidden opacity-0">
-        <div id="modal-content" class="modal-content bg-white rounded-lg shadow-2xl w-full max-w-3xl max-h-[90vh] overf"سطح پایین"-y-auto transform scale-95">
+        <div id="modal-content" class="modal-content bg-white rounded-lg shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto transform scale-95">
             <div class="sticky top-0 bg-white p-4 border-b flex justify-between items-center">
                  <h3 id="modal-title" class="text-2xl font-bold text-[#34658F]"></h3>
                  <button id="close-modal" class="text-gray-500 hover:text-red-600 text-3xl">&times;</button>
@@ -352,7 +352,7 @@
     </div>
 
     <div id="store-detail-modal" class="modal fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center p-4 hidden opacity-0">
-        <div id="store-modal-content" class="store-modal-content bg-white rounded-lg shadow-2xl w-full max-w-xl max-h-[90vh] overf"سطح پایین"-y-auto transform scale-95">
+        <div id="store-modal-content" class="store-modal-content bg-white rounded-lg shadow-2xl w-full max-w-xl max-h-[90vh] overflow-y-auto transform scale-95">
             <div class="sticky top-0 bg-white p-4 border-b flex justify-between items-center">
                 <h3 id="store-modal-title" class="text-2xl font-bold text-[#34658F]"></h3>
                 <button id="close-store-modal" class="text-gray-500 hover:text-red-600 text-3xl">&times;</button>
@@ -363,7 +363,7 @@
     </div>
 
     <div id="country-detail-modal" class="modal fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center p-4 hidden opacity-0">
-        <div id="country-modal-content" class="modal-content bg-white rounded-lg shadow-2xl w-full max-w-xl max-h-[90vh] overf"سطح پایین"-y-auto transform scale-95">
+        <div id="country-modal-content" class="modal-content bg-white rounded-lg shadow-2xl w-full max-w-xl max-h-[90vh] overflow-y-auto transform scale-95">
             <div class="sticky top-0 bg-white p-4 border-b flex justify-between items-center">
                 <h3 id="country-modal-title" class="text-2xl font-bold text-[#34658F]"></h3>
                 <button id="close-country-modal" class="text-gray-500 hover:text-red-600 text-3xl">&times;</button>
@@ -374,7 +374,7 @@
     </div>
 
     <div id="tourist-detail-modal" class="modal fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center p-4 hidden opacity-0">
-        <div id="tourist-modal-content" class="tourist-modal-content bg-white rounded-lg shadow-2xl w-full max-w-3xl max-h-[90vh] overf"سطح پایین"-y-auto transform scale-95">
+        <div id="tourist-modal-content" class="tourist-modal-content bg-white rounded-lg shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto transform scale-95">
             <div class="sticky top-0 bg-white p-4 border-b flex justify-between items-center">
                 <h3 id="tourist-modal-title" class="text-2xl font-bold text-[#34658F]"></h3>
                 <button id="close-tourist-modal" class="text-gray-500 hover:text-red-600 text-3xl">&times;</button>
@@ -3094,7 +3094,7 @@ const globalTouristStats = {
                 }
                 filteredProducts.forEach(product => {
                     const card = document.createElement('div');
-                    card.className = "bg-white rounded-lg shadow-lg overf"سطح پایین"-hidden transform hover:-translate-y-1 transition-transform duration-300 cursor-pointer";
+                    card.className = "bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 cursor-pointer";
                     card.dataset.id = product.id;
                     
                     const categoryTags = product.category.map(cat => `<span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full whitespace-nowrap">${cat}</span>`).join('');
@@ -3105,7 +3105,7 @@ const globalTouristStats = {
                         <div class="p-5">
                             <h3 class="text-lg font-bold text-[#34658F] truncate">${product.name}</h3>
                             <p class="text-sm text-gray-500 mb-2">${product.country}</p>
-                            <div class="flex flex-wrap gap-2 mt-2 max-h-12 overf"سطح پایین"-hidden"> <!-- Added max-h and overf"سطح پایین" for aesthetics -->
+                            <div class="flex flex-wrap gap-2 mt-2 max-h-12 overflow-hidden"> <!-- Added max-h and overflow for aesthetics -->
                                 ${categoryTags}
                                 ${audienceTags}
                             </div>
@@ -3790,7 +3790,7 @@ const globalTouristStats = {
                 }
                 data.forEach(countryData => {
                     const card = document.createElement('div');
-                    card.className = "bg-white rounded-lg shadow-lg overf"سطح پایین"-hidden transform hover:-translate-y-1 transition-transform duration-300 cursor-pointer";
+                    card.className = "bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 cursor-pointer";
                     card.dataset.id = countryData.id;
                     card.innerHTML = `
                         <img src="${countryData.image}" alt="${countryData.country}" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x300/CCCCCC/333333?text=No+Image';">
