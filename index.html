@@ -3903,12 +3903,19 @@ const globalTouristStats = {
             closeCountryDetailModal();
         }
     });
+    // Other code ...
+});
+document.addEventListener('DOMContentLoaded', () => {
+    // Other existing code...
+
+    // فراخوانی تمامی توابع رندرینگ برای نمایش محتوا در بارگذاری اولیه
     renderProductCards(products);
     renderProductFilters(products);
     renderCountryCards(countriesData);
     renderStoreCards(storesData);
     renderTouristAnalysisCards(touristAnalysisData);
 
+    // اضافه کردن رویداد کلیک به کارت‌های کشورها
     const countryGrid = document.getElementById('country-grid');
     countryGrid.addEventListener('click', (e) => {
         const countryCard = e.target.closest('.country-card');
@@ -3918,6 +3925,7 @@ const globalTouristStats = {
         }
     });
 
+    // اضافه کردن رویداد کلیک به کارت‌های تحلیل گردشگران
     const touristAnalysisGrid = document.getElementById('tourist-analysis-grid');
     touristAnalysisGrid.addEventListener('click', (e) => {
         const touristCard = e.target.closest('.tourist-analysis-card');
@@ -3926,9 +3934,9 @@ const globalTouristStats = {
             showTouristDetailModal(countryName);
         }
     });
-    // Other code ...
+    
+    // ... سایر کدهای موجود در این بخش
 });
-
     </script>
     
 </body>
